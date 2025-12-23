@@ -1,0 +1,573 @@
+# CLP-685, CLP-695GP Data List
+# "Manual Development Group, Yamaha Corporation"
+# 
+# Making this Data
+#   Open PDF, copy text, paste into text editor
+#
+# Changing to toml
+#   search & replace with regex
+#     Find: \1 \2 \3 \4\n
+#     Replace: \1 \2 \3 \4\n
+# Headers
+#   Voice 
+#   Group Voice Name
+#   Bank MSB
+#   Bank LSB
+#
+#
+
+[Preset Voices]
+[[Piano]]
+CFX Grand 108 0 1 
+Binaural CFX Grand 108 100 1 
+Bösendorfer 108 6 1
+Upright Piano 108 5 3
+Studio Grand 108 1 3
+Bright Grand 108 0 2
+Mellow Grand 108 1 1
+Ballad Grand 108 2 1
+Warm Grand 108 7 1
+Pop Grand 108 1 2
+Jazz Grand 108 6 2
+Rock Grand 108 0 3
+HonkyTonk Pf 108 5 4
+
+[[E.Piano]]
+Stage E.Piano 108 0 5 
+DX E.Piano 108 0 6
+Vintage EP 108 1 5
+Soft EP 108 2 5
+Phaser EP 108 3 5
+DX Bright 108 1 6
+Tremolo Vintage 108 4 5 
+
+[[Organ]]
+Organ GrandJeu 108 4 20
+Organ Principal 108 1 20 
+Organ Tutti 108 0 20
+Jazz Organ 1 108 0 17
+Jazz Organ 2 108 1 17
+Mellow Organ 108 2 17
+Organ Flute 1 108 2 20
+Organ Flute 2 108 3 20
+
+[[Strings]]
+Strings 108 0 49
+Slow Strings 108 0 50
+Choir 108 0 53
+
+[XG Voices]
+# Format: Voice group, Voice name, MSB, LSB, PRG
+[[PIANO]]
+GrandPiano 0 0 1
+GrandPiano KSP 0 1 1
+MellowGndPiano 0 18 1
+PianoStrings 0 40 1
+Dream 0 41 1
+BrightPiano 0 0 2
+BrightPiano KSP 0 1 2
+E.GrandPiano 0 0 3
+E.GndPiano KSP 0 1 3
+DetunedCP80 0 32 3
+LayeredCP1 0 40 3
+LayeredCP2 0 41 3
+Honkytonk 0 0 4
+Honkytonk KSP 0 1 4
+ElectricPiano1 0 0 5
+E.Piano1 KSP 0 1 5
+Mellow E.Piano 0 18 5
+ChorusEP1 0 32 5
+Hard E.Piano 0 40 5
+Vxfade E.Piano1 0 45 5
+60s E.Piano1 0 64 5
+ElectricPiano2 0 0 6
+E.Piano2 KSP 0 1 6
+ChorusEP2 0 32 6
+DXEPHard 0 33 6
+DXLegend 0 34 6
+DXPhaseEP 0 40 6
+DX+AnalogEP 0 41 6
+DXKotoEP 0 42 6
+VXfadeEl.Piano2 0 45 6
+Harpsichord 0 0 7
+Harpsichord KSP 0 1 7
+Harpsichord2 0 25 7
+Harpsichord3 0 35 7
+Clavi 0 0 8
+Clavi KSP 0 1 8
+ClaviWah 0 27 8
+PulseClavi 0 64 8
+PierceClavi 0 65 8
+
+[[CHROMATIC PERC]]
+Celesta 0 0 9
+Glockenspiel 0 0 10
+MusicBox 0 0 11
+MusicBox2 0 64 11
+Vibraphone 0 0 12
+Vibraphone KSP 0 1 12
+HardVibes 0 45 12
+Marimba 0 0 13
+Marimba KSP 0 1 13
+SineMarimba 0 64 13
+Balimba 0 97 13
+LogDrums 0 98 13
+Xylophone 0 0 14
+TubularBells 0 0 15
+ChurchBells 0 96 15
+Carillon 0 97 15
+Dulcimer 0 0 16
+Dulcimer2 0 35 16
+Cimbalom 0 96 16
+Santur 0 97 16
+
+[[ORGAN]]
+DrawbarOrgan 0 0 17 
+DetDrawOrgan 0 32 17
+60sDrawOrgan1 0 33 17
+60sDrawOrgan2 0 34 17
+70sDrawOrgan1 0 35 17
+DrawbarOrgan2 0 36 17
+60sDrawOrgan3 0 37 17
+EvenBarOrgan 0 38 17
+16+2'2_3Organ 0 40 17
+OrganBass 0 64 17
+70sDrawOrgan2 0 65 17 
+CheezyOrgan 0 66 17
+DrawbarOrgan3 0 67 17
+Perc.Organ1 0 0 18
+70sPerc.Organ1 0 24 18
+DetPerc.Organ 0 32 18
+LightOrgan 0 33 18
+Perc.Organ2 0 37 18
+RockOrgan 0 0 19
+RotaryOrgan 0 64 19
+SlowRotary 0 65 19
+FastRotary 0 66 19
+ChurchOrgan 0 0 20
+ChurchOrgan3 0 32 20
+ChurchOrgan2 0 35 20
+NotreDame 0 40 20
+OrganFlute 0 64 20
+Trem.OrganFlute 0 65 20
+ReedOrgan 0 0 21
+PuffOrgan 0 40 21
+Accordion 0 0 22
+AccordionItalian 0 32 22
+Harmonica 0 0 23
+Harmonica2 0 32 23
+TangoAccordion 0 0 24
+TangoAccord2 0 64 24
+
+[[GUITAR]]
+NylonGuitar 0 0 25
+NylonGuitar2 0 16 25
+NylonGuitar3 0 25 25
+VelocityGtHarmo 0 43 25
+Ukulele 0 96 25
+SteelGuitar 0 0 26
+SteelGuitar2 0 16 26
+12StrGuitar 0 35 26
+Nylon&Steel 0 40 26
+Steel&Body 0 41 26
+Mandolin 0 96 26
+JazzGuitar 0 0 27
+MellowGuitar 0 18 27
+JazzAmp 0 32 27
+CleanGuitar 0 0 28
+ChorusGuitar 0 32 28
+MutedGuitar 0 0 29
+FunkGuitar1 0 40 29
+MuteSteelGuitar 0 41 29
+FunkGuitar2 0 43 29
+JazzMan 0 45 29
+Overdriven 0 0 30
+GuitarPinch 0 43 30
+DistortionGuitar 0 0 31
+FeedbackGuitar 0 40 31
+FeedbackGtr2 0 41 31
+GuitarHarmonics 0 0 32
+GuitarFeedback 0 65 32
+GuitarHarmonic2 0 66 32
+
+[[BASS]]
+AcousticBass 0 0 33 
+JazzRhythm 0 40 33
+VXUprghtBass 0 45 33
+FingerBass 0 0 34
+FingerBassDark 0 18 34
+FlangeBass 0 27 34
+Bass&DistEG 0 40 34
+FingerSlapBass 0 43 34
+FingerBass2 0 45 34
+ModulatedBass 0 65 34
+PickBass 0 0 35
+MutePickBass 0 28 35
+FretlessBass 0 0 36
+FretlessBass2 0 32 36
+FretlessBass3 0 33 36 
+FretlessBass4 0 34 36
+SynthFretless 0 96 36
+SmthFretless 0 97 36
+SlapBass1 0 0 37
+ResonantSlap 0 27 37
+PunchThumb 0 32 37
+SlapBass2 0 0 38
+VeloSwitchSlap 0 43 38
+SynthBass1 0 0 39
+SynthBass1Dark 0 18 39
+FastResoBass 0 20 39
+AcidBass 0 24 39
+ClaviBass 0 35 39
+TechnoBass 0 40 39
+Orbiter 0 64 39
+SquareBass 0 65 39
+RubberBass 0 66 39
+Hammer 0 96 39
+SynthBass2 0 0 40
+MellowSynBass 0 6 40
+SequenceBass 0 12 40
+ClickSynthBass 0 18 40
+SynthBass2Dark 0 19 40
+SmoothSynBass 0 32 40
+ModulrSynBass 0 40 40
+DXBass 0 41 40
+XWireBass 0 64 40
+
+[[STRINGS]]
+Violin 0 0 41
+SlowAttackViolin 0 8 41
+Viola 0 0 42
+Cello 0 0 43
+Contrabass 0 0 44
+TremoloStrings 0 0 45
+SlwAtkTremStr 0 8 45
+SuspenseStrings 0 40 45
+PizzicatoStrings 0 0 46
+OrchestralHarp 0 0 47
+YangQin 0 40 47
+Timpani 0 0 48
+
+[[ENSEMBLE]]
+Strings1 0 0 49
+StereoStrings 0 3 49
+SlwAtkStrings 0 8 49
+ArcoStrings 0 24 49
+60sStrings 0 35 49
+Orchestra 0 40 49
+Orchestra2 0 41 49
+TremoloOrchstra 0 42 49
+VelocityStrings 0 45 49
+Strings2 0 0 50
+StereoSlwStrings 0 3 50
+LegatoStrings 0 8 50
+WarmStrings 0 40 50
+Kingdom 0 41 50
+70sStrings 0 64 50
+Strings3 0 65 50
+SynthStrings1 0 0 51
+ResonantStrings 0 27 51
+SynthStrings4 0 64 51
+SynthStrings5 0 65 51
+SynthStrings2 0 0 52
+ChoirAahs 0 0 53
+StereoChoir 0 3 53
+ChoirAahs2 0 16 53
+MellowChoir 0 32 53
+ChoirStrings 0 40 53
+VoiceOohs 0 0 54
+SynthVoice 0 0 55
+SynthVoice2 0 40 55
+Choral 0 41 55
+AnalogVoice 0 64 55
+OrchestraHit 0 0 56
+OrchestraHit2 0 35 56
+Impact 0 64 56
+
+[[BRASS]]
+Trumpet 0 0 57
+Trumpet2 0 16 57
+BrightTrumpet 0 17 57
+WarmTrumpet 0 32 57
+Trombone 0 0 58
+Trombone2 0 18 58
+Tuba 0 0 59
+Tuba2 0 16 59
+MutedTrumpet 0 0 60
+FrenchHorn 0 0 61
+FrenchHornSolo 0 6 61
+FrenchHorn2 0 32 61
+HornOrchestra 0 37 61
+BrassSection 0 0 62
+Tp&TbSection 0 35 62
+BrassSection2 0 40 62
+HighBrass 0 41 62
+MellowBrass 0 42 62
+SynthBrass1 0 0 63
+QuackBrass 0 12 63
+ResoSynthBrass 0 20 63
+PolyBrass 0 24 63
+SynthBrass3 0 27 63
+JumpBrass 0 32 63
+An.VeloBrass1 0 45 63
+AnalogBrass1 0 64 63
+SynthBrass2 0 0 64
+SoftBrass 0 18 64
+SynthBrass4 0 40 64
+ChoirBrass 0 41 64
+An.VeloBrass2 0 45 64
+AnalogBrass2 0 64 64
+
+[[REED]]
+SopranoSax 0 0 65
+AltoSax 0 0 66
+SaxSection 0 40 66
+HyperAltoSax 0 43 66
+TenorSax 0 0 67
+BreathyTenor 0 40 67
+SoftTenorSax 0 41 67
+TenorSax2 0 64 67
+BaritoneSax 0 0 68
+Oboe 0 0 69
+EnglishHorn 0 0 70
+Bassoon 0 0 71
+Clarinet 0 0 72
+
+[[PIPE]]
+Piccolo 0 0 73
+Flute 0 0 74
+Recorder 0 0 75
+PanFlute 0 0 76
+BlownBottle 0 0 77
+Shakuhachi 0 0 78
+Whistle 0 0 79
+Ocarina 0 0 80
+
+[[SYNTH LEAD]]
+SquareLead 0 0 81
+SquareLead2 0 6 81
+LMSquare 0 8 81
+Hollow 0 18 81
+Shroud 0 19 81
+Mellow 0 64 81
+SoloSine 0 65 81
+SineLead 0 66 81
+SawtoothLead 0 0 82
+SawtoothLead2 0 6 82
+ThickSaw 0 8 82
+DynamicSaw 0 18 82
+DigitalSaw 0 19 82
+BigLead 0 20 82
+HeavySynth 0 24 82
+WaspySynth 0 25 82
+PulseSaw 0 40 82
+Dr.Lead 0 41 82
+VelocityLead 0 45 82
+SequenceAnalog 0 96 82
+CalliopeLead 0 0 83
+PureLead 0 65 83
+ChiffLead 0 0 84
+Rubby 0 64 84
+CharangLead 0 0 85
+DistortedLead 0 64 85
+WireLead 0 65 85
+VoiceLead 0 0 86
+SynthAahs 0 24 86
+VoxLead 0 64 86
+FifthsLead 0 0 87
+BigFive 0 35 87
+Bass&Lead 0 0 88
+Big&Low 0 16 88
+Fat&Perky 0 64 88
+SoftWhirl 0 65 88
+
+[[SYNTH PAD]]
+NewAgePad 0 0 89
+Fantasy 0 64 89
+WarmPad 0 0 90
+ThickPad 0 16 90
+SoftPad 0 17 90
+SinePad 0 18 90
+HornPad 0 64 90
+RotaryStrings 0 65 90
+PolySynthPad 0 0 91
+PolyPad80 0 64 91
+ClickPad 0 65 91
+AnalogPad 0 66 91
+SquarePad 0 67 91
+ChoirPad 0 0 92
+Heaven 0 64 92
+Itopia 0 66 92
+CCPad 0 67 92
+BowedPad 0 0 93
+Glacier 0 64 93
+GlassPad 0 65 93
+MetallicPad 0 0 94
+TinePad 0 64 94
+PanPad 0 65 94
+HaloPad 0 0 95
+SweepPad 0 0 96
+Shwimmer 0 20 96
+Converge 0 27 96
+PolarPad 0 64 96
+Celestial 0 66 96
+
+[[SYNTH EFFECTS]]
+Rain 0 0 97
+ClaviPad 0 45 97
+HarmoRain 0 64 97
+AfricanWind 0 65 97
+Carib 0 66 97
+SoundTrack 0 0 98
+Prologue 0 27 98
+Ancestral 0 64 98
+Crystal 0 0 99
+SynthDrumComp 0 12 99
+Popcorn 0 14 99
+TinyBells 0 18 99
+RoundGlocken 0 35 99
+GlockenChime 0 40 99
+ClearBells 0 41 99
+ChorusBells 0 42 99
+SynthMallet 0 64 99
+SoftCrystal 0 65 99
+LoudGlocken 0 66 99
+ChristmasBells 0 67 99
+VibraphoneBells 0 68 99
+DigitalBells 0 69 99
+AirBells 0 70 99
+BellHarp 0 71 99
+Gamelimba 0 72 99
+Atmosphere 0 0 100
+WarmAtmos. 0 18 100
+HollwRelease 0 19 100
+NylonEl.Piano 0 40 100
+NylonHarp 0 64 100
+HarpVox 0 65 100
+AtmospherePad 0 66 100
+Planet 0 67 100
+Brightness 0 0 101
+FantasyBells 0 64 101
+Smokey 0 96 101
+Goblins 0 0 102
+GoblinsSynth 0 64 102
+Creeper 0 65 102
+RingPad 0 66 102
+Ritual 0 67 102
+ToHeaven 0 68 102
+Night 0 70 102
+Glisten 0 71 102
+BellChoir 0 96 102
+Echoes 0 0 103
+Echoes2 0 8 103
+EchoPan 0 14 103
+EchoBells 0 64 103
+BigPan 0 65 103
+SynthPiano 0 66 103
+Creation 0 67 103
+Stardust 0 68 103
+Reso&Panning 0 69 103
+ScienceFiction 0 0 104
+Starz 0 64 104
+
+[[ETHNIC]]
+Sitar 0 0 105
+DetunedSitar 0 32 105
+Sitar2 0 35 105
+Tambra 0 96 105
+Tamboura 0 97 105
+Banjo 0 0 106
+MutedBanjo 0 28 106
+Rabab 0 96 106
+Gopichant 0 97 106
+Oud 0 98 106
+Shamisen 0 0 107
+Koto 0 0 108
+Taisho-kin 0 96 108
+Kanoon 0 97 108
+Kalimba 0 0 109
+Bagpipe 0 0 110
+Fiddle 0 0 111
+Shanai 0 0 112
+Shanai2 0 64 112
+Pungi 0 96 112
+Hichiriki 0 97 112
+
+[[PERCUSSIVE]]
+TinkleBell 0 0 113
+Bonang 0 96 113
+Altair 0 97 113
+GamelanGongs 0 98 113
+StereoGamlan 0 99 113
+RamaCymbal 0 100 113
+AsianBells 0 101 113
+PERCUSSIVE Agogo 0 0 114
+SteelDrums 0 0 115
+GlassPercussion 0 97 115
+ThaiBells 0 98 115
+Woodblock 0 0 116
+Castanets 0 96 116
+TaikoDrum 0 0 117
+GranCassa 0 96 117
+MelodicTom 0 0 118
+MelodicTom2 0 64 118
+RealTom 0 65 118
+RockTom 0 66 118
+SynthDrum 0 0 119
+AnalogTom 0 64 119
+ElectroPerc. 0 65 119
+ReverseCymbal 0 0 120
+
+[[SOUND EFFECTS]]
+GuitarFretNoise 0 0 121 
+BreathNoise 0 0 122
+Seashore 0 0 123
+BirdTweet 0 0 124
+TelephoneRing 0 0 125
+Helicopter 0 0 126
+Applause 0 0 127
+Gunshot 0 0 128
+
+[[SFX]]
+CuttingNoise 64 0 1
+CuttingNoise2 64 0 2
+StringSlap 64 0 4
+FluteKeyClick 64 0 17
+Shower 64 0 33
+Thunder 64 0 34
+Wind 64 0 35
+Stream 64 0 36
+Bubble 64 0 37
+Feed 64 0 38
+Dog 64 0 49
+Horse 64 0 50
+BirdTweet2 64 0 51
+Ghost 64 0 55
+Maou 64 0 56
+PhoneCall 64 0 65
+DoorSqueak 64 0 66
+DoorSlam 64 0 67
+ScratchCut 64 0 68
+ScratchSplit 64 0 69
+WindChime 64 0 70
+TelephoneRing2 64 0 71
+CarEngineIgn 64 0 81
+CarTiresSqel 64 0 82
+CarPassing 64 0 83
+CarCrash 64 0 84
+Siren 64 0 85
+Train 64 0 86
+JetPlane 64 0 87
+Starship 64 0 88
+Burst 64 0 89
+RollerCoaster 64 0 90
+Submarine 64 0 91
+Laugh 64 0 97
+Scream 64 0 98
+Punch 64 0 99
+Heartbeat 64 0 100
+FootSteps 64 0 101
+MachineGun 64 0 113
+LaserGun 64 0 114
+Explosion 64 0 115
+Firework 64 0 116
