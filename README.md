@@ -31,6 +31,12 @@ If you want to make an ins file, I'll give you my tools for reference(some pytho
 
 ## How to
 
+### CLP 685 지원 MIDI 형식
+
+- GM System Level 2
+- XG
+- GS
+
 ### 기본 개념 
 
 악기 선택은 다음 형태로 전송된다
