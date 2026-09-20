@@ -2,6 +2,11 @@
 # data/yamaha-clp685-data.toml 은 생성기와 find_instruments.py 가 읽는 입력이므로 커밋한다.
 data/*.json
 
+# reference/ 는 제조사·서드파티가 배포한 원문 PDF 보관용이다.
+# 재배포 허가 범위 밖일 수 있으므로 저장소에는 올리지 않는다.
+# 어떤 문서인지는 README 의 "참고 문서" 절에 링크로 남긴다.
+reference/
+
 __pycache__/
 *.py[cod]
 .venv/

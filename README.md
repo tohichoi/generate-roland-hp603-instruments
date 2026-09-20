@@ -194,6 +194,23 @@ ProgramNumber = PC
 
 ## References
 
+### 참고 문서 (로컬 보관, 저장소 미배포)
+
+전사 작업의 1차 자료로 쓴 제조사·서드파티 문서들입니다. 재배포 허가 범위 밖일 수 있어 저장소에는 포함하지 않고 `reference/` 에 로컬 보관만 합니다. 아래 링크는 각 문서의 배포처입니다.
+
+| 로컬 파일 | 문서 | 배포처 |
+| :--- | :--- | :--- |
+| `Midi_Implementatie_Roland_LX-7.pdf` | Roland LX-7 MIDI 구현 명세 | [Roland 지원](https://www.roland.com/support/) |
+| `INFOCUS01_MIDI.pdf` | Roland MIDI 구현 안내 | [Roland (PDF)](http://cms.rolandus.com/assets/media/pdf/INFOCUS01_MIDI.pdf) |
+| `roland_full_tone_list.pdf` | Roland 전체 음색 목록 | [Roland 지원](https://www.roland.com/support/) |
+| `Roland_gm2_sounds.pdf` | Roland GM2 음색 목록 | [Roland 지원](https://www.roland.com/support/) |
+| `Selecting_Fantom-G_and_ARX-Series_Sounds_Via_MIDI.pdf` | Fantom-G / ARX 음색 선택 | [Roland 지원](https://www.roland.com/support/) |
+| `Selecting_Ints_and_SR-JV80s.pdf` | SR-JV80 음색 선택 | [Roland 지원](https://www.roland.com/support/) |
+| `Selecting_SRX_Sounds_0707.pdf` | SRX 음색 선택 | [Roland 지원](https://www.roland.com/support/) |
+| `Cakewalk Application Language Programming Guide.pdf` | Cakewalk CAL 프로그래밍 가이드 | [Cakewalk 문서](https://www.cakewalk.com/Documentation) |
+
+주의할 점이 하나 있습니다. **Roland HP603 의 318건 전사는 `Midi_Implementatie_Roland_LX-7.pdf` 를 원문으로 삼았지만, Yamaha CLP-685 의 511건 전사에 쓰인 `CLP-685/CLP-695GP Data List` 는 로컬에도 저장소에도 없습니다.** Yamaha 쪽 데이터는 [Yamaha CLP-685 다운로드 페이지](https://usa.yamaha.com/products/musical_instruments/pianos/clavinova/clp-685/downloads.html)에서 받을 수 있으며, 전사 정확성을 원문과 대조하려면 이 문서가 필요합니다.
+
 ### MIDI Specification
 https://www.midi.org/specifications
 http://www.music-software-development.com/midi-tutorial.html
