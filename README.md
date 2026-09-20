@@ -192,6 +192,12 @@ ProgramNumber = PC
 2. Drum patch is not tested(my holiday is over!)
 
 
+## License
+
+이 저장소의 코드는 [MIT License](LICENSE) 로 배포합니다. Copyright (c) 2019-2026 Mike Choi.
+
+한 가지 범위 밖의 사실을 밝혀 둡니다. 이 라이선스는 Mike 가 저작권을 가진 부분(생성기 스크립트, 문서, 전사 작업)에 적용됩니다. `hp603 instruments.txt` 와 `data/yamaha-clp685-data.txt` 의 음색 이름·bank/program 번호는 Roland 와 Yamaha 가 배포한 데이터 리스트에서 전사한 값이고, 그 원문 자체는 각 제조사에 권리가 있습니다. `reference/` 의 PDF 들도 같은 이유로 저장소에 포함하지 않습니다.
+
 ## References
 
 ### 참고 문서 (로컬 보관, 저장소 미배포)

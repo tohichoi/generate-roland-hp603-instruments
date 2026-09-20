@@ -369,7 +369,9 @@ Streamlit을 띄워야만 드러나는 오류이고 자동 테스트가 없어 �
 
 ### 7-4. 저장소 위생
 
-`LICENSE`가 없습니다. 공개 저장소인데 라이선스가 없어 재사용 조건이 불명확합니다. `.gitignore`도 없었으며 편입 과정에서 추가했습니다. `requirements.txt`는 UTF-16(BOM)으로 저장되어 pip는 처리하지만 UTF-8을 가정하는 일반 도구는 읽지 못하며, 내용이 큐레이션 목록이 아니라 환경 전체의 `pip freeze`(43개)이고 `test_program_change.py`가 쓰는 `python-rtmidi`는 빠져 있습니다.
+공개 저장소인데 `LICENSE`가 없어 재사용 조건이 불명확했습니다. 편입 과정에서 MIT License 를 추가했습니다. `.gitignore`도 없었으며 함께 추가했습니다.
+
+다만 라이선스가 미치는 범위에는 한계가 있습니다. MIT 는 Mike 가 저작권을 가진 부분(생성기 스크립트, 문서, 전사 작업)에 적용되며, 전사한 음색 이름과 bank/program 번호의 원문은 각 제조사에 권리가 있습니다. 이 사실을 `README.md` 의 License 절과 `reference/` 제외 조치로 함께 밝혔습니다. `requirements.txt`는 UTF-16(BOM)으로 저장되어 pip는 처리하지만 UTF-8을 가정하는 일반 도구는 읽지 못하며, 내용이 큐레이션 목록이 아니라 환경 전체의 `pip freeze`(43개)이고 `test_program_change.py`가 쓰는 `python-rtmidi`는 빠져 있습니다.
 
 `README.md`는 `.toml`이 커밋되어 있다고 안내하지만 실제로는 추적되지 않아, 편입 커밋에 포함해야 문면대로 동작합니다.
 
