@@ -11,12 +11,14 @@ def load_data(filename):
     return toml.load(filename)
 
 
-def make_dataframe(data):
+def make_dataframe(groups):
+    # TOML 구조: {카테고리: {보이스 그룹: [악기, ...]}}
+    # make_toml.py 가 만드는 [["카테고리"."그룹"]] 테이블과 같은 모양이다.
     flat_list = []
-    for category, instruments in data.items():
+    for group, instruments in groups.items():
         for inst in instruments:
-            # 카테고리 정보를 추가하여 새로운 딕셔너리 생성
-            row = {'Category': category}
+            # 보이스 그룹 정보를 추가하여 새로운 딕셔너리 생성
+            row = {'Category': group}
             row.update(inst)
             flat_list.append(row)
     df = pd.DataFrame(flat_list)
@@ -25,15 +27,8 @@ def make_dataframe(data):
     return df
 
 @st.cache_data()
-def get_categories(df_list):
-    categories = []
-    for group, df in df_list:
-        categories.append(df.groupby('Category').groups.keys())
-    return categories
-
-@st.cache_data()
 def convert_data_to_dataframes(data):
-    return [(group, make_dataframe(data[group])) for group in data]
+    return [(category, make_dataframe(data[category])) for category in data]
 
 
 def main():

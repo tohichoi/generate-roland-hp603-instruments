@@ -27,14 +27,15 @@ def send_gm2_sysex(port):
 
 
 def get_cc_msg(val):
+    # val 은 [CC#0, CC#32, PC#] 값 세 개. 컨트롤 번호는 0/32 로 고정이고
+    # val 의 값들은 각 메시지의 value(= bank MSB/LSB, program)로 들어간다.
+    msb, lsb, pc=map(int, val)
 
-    idx=0
-    pcmsg=[]
-    pcmsg.append(Message('control_change', control=int(val.pop())))
-    pcmsg.append(Message('control_change', control=int(val.pop())))
-    pcmsg.append(Message('program_change', program=int(val.pop())))
-
-    return pcmsg
+    return [
+        Message('control_change', control=0, value=msb),
+        Message('control_change', control=32, value=lsb),
+        Message('program_change', program=pc),
+    ]
 
 
 
@@ -73,7 +74,7 @@ send_gm2_sysex(port)
 
 while True:
     ret=input('Enter CC#0, CC#32, PC# : ').strip().split()
-    if len(ret) < 1:
+    if len(ret) < 3:
         break
     pcmsg=get_cc_msg(ret)
     # print(' '.join(map(int, pcmsg)))

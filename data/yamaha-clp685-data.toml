@@ -1,0 +1,2594 @@
+# CLP-685, CLP-695GP Data List
+# "Manual Development Group, Yamaha Corporation"
+#
+# Making this Data
+#   Open PDF, copy text, paste into text editor
+#
+# Changing to toml
+#   search & replace with regex
+#     Find: \1 \2 \3 \4\n
+#     Replace: \1 \2 \3 \4\n
+# Headers
+#   Voice
+#   Group Voice Name
+#   Bank MSB
+#   Bank LSB
+#
+#
+
+[["Preset Voices"."Piano"]]
+name="CFX Grand"
+msb=108
+lsb=0
+prog=1
+[["Preset Voices"."Piano"]]
+name="Binaural CFX Grand"
+msb=108
+lsb=100
+prog=1
+[["Preset Voices"."Piano"]]
+name="Bösendorfer"
+msb=108
+lsb=6
+prog=1
+[["Preset Voices"."Piano"]]
+name="Upright Piano"
+msb=108
+lsb=5
+prog=3
+[["Preset Voices"."Piano"]]
+name="Studio Grand"
+msb=108
+lsb=1
+prog=3
+[["Preset Voices"."Piano"]]
+name="Bright Grand"
+msb=108
+lsb=0
+prog=2
+[["Preset Voices"."Piano"]]
+name="Mellow Grand"
+msb=108
+lsb=1
+prog=1
+[["Preset Voices"."Piano"]]
+name="Ballad Grand"
+msb=108
+lsb=2
+prog=1
+[["Preset Voices"."Piano"]]
+name="Warm Grand"
+msb=108
+lsb=7
+prog=1
+[["Preset Voices"."Piano"]]
+name="Pop Grand"
+msb=108
+lsb=1
+prog=2
+[["Preset Voices"."Piano"]]
+name="Jazz Grand"
+msb=108
+lsb=6
+prog=2
+[["Preset Voices"."Piano"]]
+name="Rock Grand"
+msb=108
+lsb=0
+prog=3
+[["Preset Voices"."Piano"]]
+name="HonkyTonk Pf"
+msb=108
+lsb=5
+prog=4
+
+[["Preset Voices"."E.Piano"]]
+name="Stage E.Piano"
+msb=108
+lsb=0
+prog=5
+[["Preset Voices"."E.Piano"]]
+name="DX E.Piano"
+msb=108
+lsb=0
+prog=6
+[["Preset Voices"."E.Piano"]]
+name="Vintage EP"
+msb=108
+lsb=1
+prog=5
+[["Preset Voices"."E.Piano"]]
+name="Soft EP"
+msb=108
+lsb=2
+prog=5
+[["Preset Voices"."E.Piano"]]
+name="Phaser EP"
+msb=108
+lsb=3
+prog=5
+[["Preset Voices"."E.Piano"]]
+name="DX Bright"
+msb=108
+lsb=1
+prog=6
+[["Preset Voices"."E.Piano"]]
+name="Tremolo Vintage"
+msb=108
+lsb=4
+prog=5
+
+[["Preset Voices"."Organ"]]
+name="Organ GrandJeu"
+msb=108
+lsb=4
+prog=20
+[["Preset Voices"."Organ"]]
+name="Organ Principal"
+msb=108
+lsb=1
+prog=20
+[["Preset Voices"."Organ"]]
+name="Organ Tutti"
+msb=108
+lsb=0
+prog=20
+[["Preset Voices"."Organ"]]
+name="Jazz Organ 1"
+msb=108
+lsb=0
+prog=17
+[["Preset Voices"."Organ"]]
+name="Jazz Organ 2"
+msb=108
+lsb=1
+prog=17
+[["Preset Voices"."Organ"]]
+name="Mellow Organ"
+msb=108
+lsb=2
+prog=17
+[["Preset Voices"."Organ"]]
+name="Organ Flute 1"
+msb=108
+lsb=2
+prog=20
+[["Preset Voices"."Organ"]]
+name="Organ Flute 2"
+msb=108
+lsb=3
+prog=20
+
+[["Preset Voices"."Strings"]]
+name="Strings"
+msb=108
+lsb=0
+prog=49
+[["Preset Voices"."Strings"]]
+name="Slow Strings"
+msb=108
+lsb=0
+prog=50
+[["Preset Voices"."Strings"]]
+name="Choir"
+msb=108
+lsb=0
+prog=53
+
+# Format: Voice group, Voice name, MSB, LSB, PRG
+[["XG Voices"."PIANO"]]
+name="GrandPiano"
+msb=0
+lsb=0
+prog=1
+[["XG Voices"."PIANO"]]
+name="GrandPiano KSP"
+msb=0
+lsb=1
+prog=1
+[["XG Voices"."PIANO"]]
+name="MellowGndPiano"
+msb=0
+lsb=18
+prog=1
+[["XG Voices"."PIANO"]]
+name="PianoStrings"
+msb=0
+lsb=40
+prog=1
+[["XG Voices"."PIANO"]]
+name="Dream"
+msb=0
+lsb=41
+prog=1
+[["XG Voices"."PIANO"]]
+name="BrightPiano"
+msb=0
+lsb=0
+prog=2
+[["XG Voices"."PIANO"]]
+name="BrightPiano KSP"
+msb=0
+lsb=1
+prog=2
+[["XG Voices"."PIANO"]]
+name="E.GrandPiano"
+msb=0
+lsb=0
+prog=3
+[["XG Voices"."PIANO"]]
+name="E.GndPiano KSP"
+msb=0
+lsb=1
+prog=3
+[["XG Voices"."PIANO"]]
+name="DetunedCP80"
+msb=0
+lsb=32
+prog=3
+[["XG Voices"."PIANO"]]
+name="LayeredCP1"
+msb=0
+lsb=40
+prog=3
+[["XG Voices"."PIANO"]]
+name="LayeredCP2"
+msb=0
+lsb=41
+prog=3
+[["XG Voices"."PIANO"]]
+name="Honkytonk"
+msb=0
+lsb=0
+prog=4
+[["XG Voices"."PIANO"]]
+name="Honkytonk KSP"
+msb=0
+lsb=1
+prog=4
+[["XG Voices"."PIANO"]]
+name="ElectricPiano1"
+msb=0
+lsb=0
+prog=5
+[["XG Voices"."PIANO"]]
+name="E.Piano1 KSP"
+msb=0
+lsb=1
+prog=5
+[["XG Voices"."PIANO"]]
+name="Mellow E.Piano"
+msb=0
+lsb=18
+prog=5
+[["XG Voices"."PIANO"]]
+name="ChorusEP1"
+msb=0
+lsb=32
+prog=5
+[["XG Voices"."PIANO"]]
+name="Hard E.Piano"
+msb=0
+lsb=40
+prog=5
+[["XG Voices"."PIANO"]]
+name="Vxfade E.Piano1"
+msb=0
+lsb=45
+prog=5
+[["XG Voices"."PIANO"]]
+name="60s E.Piano1"
+msb=0
+lsb=64
+prog=5
+[["XG Voices"."PIANO"]]
+name="ElectricPiano2"
+msb=0
+lsb=0
+prog=6
+[["XG Voices"."PIANO"]]
+name="E.Piano2 KSP"
+msb=0
+lsb=1
+prog=6
+[["XG Voices"."PIANO"]]
+name="ChorusEP2"
+msb=0
+lsb=32
+prog=6
+[["XG Voices"."PIANO"]]
+name="DXEPHard"
+msb=0
+lsb=33
+prog=6
+[["XG Voices"."PIANO"]]
+name="DXLegend"
+msb=0
+lsb=34
+prog=6
+[["XG Voices"."PIANO"]]
+name="DXPhaseEP"
+msb=0
+lsb=40
+prog=6
+[["XG Voices"."PIANO"]]
+name="DX+AnalogEP"
+msb=0
+lsb=41
+prog=6
+[["XG Voices"."PIANO"]]
+name="DXKotoEP"
+msb=0
+lsb=42
+prog=6
+[["XG Voices"."PIANO"]]
+name="VXfadeEl.Piano2"
+msb=0
+lsb=45
+prog=6
+[["XG Voices"."PIANO"]]
+name="Harpsichord"
+msb=0
+lsb=0
+prog=7
+[["XG Voices"."PIANO"]]
+name="Harpsichord KSP"
+msb=0
+lsb=1
+prog=7
+[["XG Voices"."PIANO"]]
+name="Harpsichord2"
+msb=0
+lsb=25
+prog=7
+[["XG Voices"."PIANO"]]
+name="Harpsichord3"
+msb=0
+lsb=35
+prog=7
+[["XG Voices"."PIANO"]]
+name="Clavi"
+msb=0
+lsb=0
+prog=8
+[["XG Voices"."PIANO"]]
+name="Clavi KSP"
+msb=0
+lsb=1
+prog=8
+[["XG Voices"."PIANO"]]
+name="ClaviWah"
+msb=0
+lsb=27
+prog=8
+[["XG Voices"."PIANO"]]
+name="PulseClavi"
+msb=0
+lsb=64
+prog=8
+[["XG Voices"."PIANO"]]
+name="PierceClavi"
+msb=0
+lsb=65
+prog=8
+
+[["XG Voices"."CHROMATIC PERC"]]
+name="Celesta"
+msb=0
+lsb=0
+prog=9
+[["XG Voices"."CHROMATIC PERC"]]
+name="Glockenspiel"
+msb=0
+lsb=0
+prog=10
+[["XG Voices"."CHROMATIC PERC"]]
+name="MusicBox"
+msb=0
+lsb=0
+prog=11
+[["XG Voices"."CHROMATIC PERC"]]
+name="MusicBox2"
+msb=0
+lsb=64
+prog=11
+[["XG Voices"."CHROMATIC PERC"]]
+name="Vibraphone"
+msb=0
+lsb=0
+prog=12
+[["XG Voices"."CHROMATIC PERC"]]
+name="Vibraphone KSP"
+msb=0
+lsb=1
+prog=12
+[["XG Voices"."CHROMATIC PERC"]]
+name="HardVibes"
+msb=0
+lsb=45
+prog=12
+[["XG Voices"."CHROMATIC PERC"]]
+name="Marimba"
+msb=0
+lsb=0
+prog=13
+[["XG Voices"."CHROMATIC PERC"]]
+name="Marimba KSP"
+msb=0
+lsb=1
+prog=13
+[["XG Voices"."CHROMATIC PERC"]]
+name="SineMarimba"
+msb=0
+lsb=64
+prog=13
+[["XG Voices"."CHROMATIC PERC"]]
+name="Balimba"
+msb=0
+lsb=97
+prog=13
+[["XG Voices"."CHROMATIC PERC"]]
+name="LogDrums"
+msb=0
+lsb=98
+prog=13
+[["XG Voices"."CHROMATIC PERC"]]
+name="Xylophone"
+msb=0
+lsb=0
+prog=14
+[["XG Voices"."CHROMATIC PERC"]]
+name="TubularBells"
+msb=0
+lsb=0
+prog=15
+[["XG Voices"."CHROMATIC PERC"]]
+name="ChurchBells"
+msb=0
+lsb=96
+prog=15
+[["XG Voices"."CHROMATIC PERC"]]
+name="Carillon"
+msb=0
+lsb=97
+prog=15
+[["XG Voices"."CHROMATIC PERC"]]
+name="Dulcimer"
+msb=0
+lsb=0
+prog=16
+[["XG Voices"."CHROMATIC PERC"]]
+name="Dulcimer2"
+msb=0
+lsb=35
+prog=16
+[["XG Voices"."CHROMATIC PERC"]]
+name="Cimbalom"
+msb=0
+lsb=96
+prog=16
+[["XG Voices"."CHROMATIC PERC"]]
+name="Santur"
+msb=0
+lsb=97
+prog=16
+
+[["XG Voices"."ORGAN"]]
+name="DrawbarOrgan"
+msb=0
+lsb=0
+prog=17
+[["XG Voices"."ORGAN"]]
+name="DetDrawOrgan"
+msb=0
+lsb=32
+prog=17
+[["XG Voices"."ORGAN"]]
+name="60sDrawOrgan1"
+msb=0
+lsb=33
+prog=17
+[["XG Voices"."ORGAN"]]
+name="60sDrawOrgan2"
+msb=0
+lsb=34
+prog=17
+[["XG Voices"."ORGAN"]]
+name="70sDrawOrgan1"
+msb=0
+lsb=35
+prog=17
+[["XG Voices"."ORGAN"]]
+name="DrawbarOrgan2"
+msb=0
+lsb=36
+prog=17
+[["XG Voices"."ORGAN"]]
+name="60sDrawOrgan3"
+msb=0
+lsb=37
+prog=17
+[["XG Voices"."ORGAN"]]
+name="EvenBarOrgan"
+msb=0
+lsb=38
+prog=17
+[["XG Voices"."ORGAN"]]
+name="16+2'2_3Organ"
+msb=0
+lsb=40
+prog=17
+[["XG Voices"."ORGAN"]]
+name="OrganBass"
+msb=0
+lsb=64
+prog=17
+[["XG Voices"."ORGAN"]]
+name="70sDrawOrgan2"
+msb=0
+lsb=65
+prog=17
+[["XG Voices"."ORGAN"]]
+name="CheezyOrgan"
+msb=0
+lsb=66
+prog=17
+[["XG Voices"."ORGAN"]]
+name="DrawbarOrgan3"
+msb=0
+lsb=67
+prog=17
+[["XG Voices"."ORGAN"]]
+name="Perc.Organ1"
+msb=0
+lsb=0
+prog=18
+[["XG Voices"."ORGAN"]]
+name="70sPerc.Organ1"
+msb=0
+lsb=24
+prog=18
+[["XG Voices"."ORGAN"]]
+name="DetPerc.Organ"
+msb=0
+lsb=32
+prog=18
+[["XG Voices"."ORGAN"]]
+name="LightOrgan"
+msb=0
+lsb=33
+prog=18
+[["XG Voices"."ORGAN"]]
+name="Perc.Organ2"
+msb=0
+lsb=37
+prog=18
+[["XG Voices"."ORGAN"]]
+name="RockOrgan"
+msb=0
+lsb=0
+prog=19
+[["XG Voices"."ORGAN"]]
+name="RotaryOrgan"
+msb=0
+lsb=64
+prog=19
+[["XG Voices"."ORGAN"]]
+name="SlowRotary"
+msb=0
+lsb=65
+prog=19
+[["XG Voices"."ORGAN"]]
+name="FastRotary"
+msb=0
+lsb=66
+prog=19
+[["XG Voices"."ORGAN"]]
+name="ChurchOrgan"
+msb=0
+lsb=0
+prog=20
+[["XG Voices"."ORGAN"]]
+name="ChurchOrgan3"
+msb=0
+lsb=32
+prog=20
+[["XG Voices"."ORGAN"]]
+name="ChurchOrgan2"
+msb=0
+lsb=35
+prog=20
+[["XG Voices"."ORGAN"]]
+name="NotreDame"
+msb=0
+lsb=40
+prog=20
+[["XG Voices"."ORGAN"]]
+name="OrganFlute"
+msb=0
+lsb=64
+prog=20
+[["XG Voices"."ORGAN"]]
+name="Trem.OrganFlute"
+msb=0
+lsb=65
+prog=20
+[["XG Voices"."ORGAN"]]
+name="ReedOrgan"
+msb=0
+lsb=0
+prog=21
+[["XG Voices"."ORGAN"]]
+name="PuffOrgan"
+msb=0
+lsb=40
+prog=21
+[["XG Voices"."ORGAN"]]
+name="Accordion"
+msb=0
+lsb=0
+prog=22
+[["XG Voices"."ORGAN"]]
+name="AccordionItalian"
+msb=0
+lsb=32
+prog=22
+[["XG Voices"."ORGAN"]]
+name="Harmonica"
+msb=0
+lsb=0
+prog=23
+[["XG Voices"."ORGAN"]]
+name="Harmonica2"
+msb=0
+lsb=32
+prog=23
+[["XG Voices"."ORGAN"]]
+name="TangoAccordion"
+msb=0
+lsb=0
+prog=24
+[["XG Voices"."ORGAN"]]
+name="TangoAccord2"
+msb=0
+lsb=64
+prog=24
+
+[["XG Voices"."GUITAR"]]
+name="NylonGuitar"
+msb=0
+lsb=0
+prog=25
+[["XG Voices"."GUITAR"]]
+name="NylonGuitar2"
+msb=0
+lsb=16
+prog=25
+[["XG Voices"."GUITAR"]]
+name="NylonGuitar3"
+msb=0
+lsb=25
+prog=25
+[["XG Voices"."GUITAR"]]
+name="VelocityGtHarmo"
+msb=0
+lsb=43
+prog=25
+[["XG Voices"."GUITAR"]]
+name="Ukulele"
+msb=0
+lsb=96
+prog=25
+[["XG Voices"."GUITAR"]]
+name="SteelGuitar"
+msb=0
+lsb=0
+prog=26
+[["XG Voices"."GUITAR"]]
+name="SteelGuitar2"
+msb=0
+lsb=16
+prog=26
+[["XG Voices"."GUITAR"]]
+name="12StrGuitar"
+msb=0
+lsb=35
+prog=26
+[["XG Voices"."GUITAR"]]
+name="Nylon&Steel"
+msb=0
+lsb=40
+prog=26
+[["XG Voices"."GUITAR"]]
+name="Steel&Body"
+msb=0
+lsb=41
+prog=26
+[["XG Voices"."GUITAR"]]
+name="Mandolin"
+msb=0
+lsb=96
+prog=26
+[["XG Voices"."GUITAR"]]
+name="JazzGuitar"
+msb=0
+lsb=0
+prog=27
+[["XG Voices"."GUITAR"]]
+name="MellowGuitar"
+msb=0
+lsb=18
+prog=27
+[["XG Voices"."GUITAR"]]
+name="JazzAmp"
+msb=0
+lsb=32
+prog=27
+[["XG Voices"."GUITAR"]]
+name="CleanGuitar"
+msb=0
+lsb=0
+prog=28
+[["XG Voices"."GUITAR"]]
+name="ChorusGuitar"
+msb=0
+lsb=32
+prog=28
+[["XG Voices"."GUITAR"]]
+name="MutedGuitar"
+msb=0
+lsb=0
+prog=29
+[["XG Voices"."GUITAR"]]
+name="FunkGuitar1"
+msb=0
+lsb=40
+prog=29
+[["XG Voices"."GUITAR"]]
+name="MuteSteelGuitar"
+msb=0
+lsb=41
+prog=29
+[["XG Voices"."GUITAR"]]
+name="FunkGuitar2"
+msb=0
+lsb=43
+prog=29
+[["XG Voices"."GUITAR"]]
+name="JazzMan"
+msb=0
+lsb=45
+prog=29
+[["XG Voices"."GUITAR"]]
+name="Overdriven"
+msb=0
+lsb=0
+prog=30
+[["XG Voices"."GUITAR"]]
+name="GuitarPinch"
+msb=0
+lsb=43
+prog=30
+[["XG Voices"."GUITAR"]]
+name="DistortionGuitar"
+msb=0
+lsb=0
+prog=31
+[["XG Voices"."GUITAR"]]
+name="FeedbackGuitar"
+msb=0
+lsb=40
+prog=31
+[["XG Voices"."GUITAR"]]
+name="FeedbackGtr2"
+msb=0
+lsb=41
+prog=31
+[["XG Voices"."GUITAR"]]
+name="GuitarHarmonics"
+msb=0
+lsb=0
+prog=32
+[["XG Voices"."GUITAR"]]
+name="GuitarFeedback"
+msb=0
+lsb=65
+prog=32
+[["XG Voices"."GUITAR"]]
+name="GuitarHarmonic2"
+msb=0
+lsb=66
+prog=32
+
+[["XG Voices"."BASS"]]
+name="AcousticBass"
+msb=0
+lsb=0
+prog=33
+[["XG Voices"."BASS"]]
+name="JazzRhythm"
+msb=0
+lsb=40
+prog=33
+[["XG Voices"."BASS"]]
+name="VXUprghtBass"
+msb=0
+lsb=45
+prog=33
+[["XG Voices"."BASS"]]
+name="FingerBass"
+msb=0
+lsb=0
+prog=34
+[["XG Voices"."BASS"]]
+name="FingerBassDark"
+msb=0
+lsb=18
+prog=34
+[["XG Voices"."BASS"]]
+name="FlangeBass"
+msb=0
+lsb=27
+prog=34
+[["XG Voices"."BASS"]]
+name="Bass&DistEG"
+msb=0
+lsb=40
+prog=34
+[["XG Voices"."BASS"]]
+name="FingerSlapBass"
+msb=0
+lsb=43
+prog=34
+[["XG Voices"."BASS"]]
+name="FingerBass2"
+msb=0
+lsb=45
+prog=34
+[["XG Voices"."BASS"]]
+name="ModulatedBass"
+msb=0
+lsb=65
+prog=34
+[["XG Voices"."BASS"]]
+name="PickBass"
+msb=0
+lsb=0
+prog=35
+[["XG Voices"."BASS"]]
+name="MutePickBass"
+msb=0
+lsb=28
+prog=35
+[["XG Voices"."BASS"]]
+name="FretlessBass"
+msb=0
+lsb=0
+prog=36
+[["XG Voices"."BASS"]]
+name="FretlessBass2"
+msb=0
+lsb=32
+prog=36
+[["XG Voices"."BASS"]]
+name="FretlessBass3"
+msb=0
+lsb=33
+prog=36
+[["XG Voices"."BASS"]]
+name="FretlessBass4"
+msb=0
+lsb=34
+prog=36
+[["XG Voices"."BASS"]]
+name="SynthFretless"
+msb=0
+lsb=96
+prog=36
+[["XG Voices"."BASS"]]
+name="SmthFretless"
+msb=0
+lsb=97
+prog=36
+[["XG Voices"."BASS"]]
+name="SlapBass1"
+msb=0
+lsb=0
+prog=37
+[["XG Voices"."BASS"]]
+name="ResonantSlap"
+msb=0
+lsb=27
+prog=37
+[["XG Voices"."BASS"]]
+name="PunchThumb"
+msb=0
+lsb=32
+prog=37
+[["XG Voices"."BASS"]]
+name="SlapBass2"
+msb=0
+lsb=0
+prog=38
+[["XG Voices"."BASS"]]
+name="VeloSwitchSlap"
+msb=0
+lsb=43
+prog=38
+[["XG Voices"."BASS"]]
+name="SynthBass1"
+msb=0
+lsb=0
+prog=39
+[["XG Voices"."BASS"]]
+name="SynthBass1Dark"
+msb=0
+lsb=18
+prog=39
+[["XG Voices"."BASS"]]
+name="FastResoBass"
+msb=0
+lsb=20
+prog=39
+[["XG Voices"."BASS"]]
+name="AcidBass"
+msb=0
+lsb=24
+prog=39
+[["XG Voices"."BASS"]]
+name="ClaviBass"
+msb=0
+lsb=35
+prog=39
+[["XG Voices"."BASS"]]
+name="TechnoBass"
+msb=0
+lsb=40
+prog=39
+[["XG Voices"."BASS"]]
+name="Orbiter"
+msb=0
+lsb=64
+prog=39
+[["XG Voices"."BASS"]]
+name="SquareBass"
+msb=0
+lsb=65
+prog=39
+[["XG Voices"."BASS"]]
+name="RubberBass"
+msb=0
+lsb=66
+prog=39
+[["XG Voices"."BASS"]]
+name="Hammer"
+msb=0
+lsb=96
+prog=39
+[["XG Voices"."BASS"]]
+name="SynthBass2"
+msb=0
+lsb=0
+prog=40
+[["XG Voices"."BASS"]]
+name="MellowSynBass"
+msb=0
+lsb=6
+prog=40
+[["XG Voices"."BASS"]]
+name="SequenceBass"
+msb=0
+lsb=12
+prog=40
+[["XG Voices"."BASS"]]
+name="ClickSynthBass"
+msb=0
+lsb=18
+prog=40
+[["XG Voices"."BASS"]]
+name="SynthBass2Dark"
+msb=0
+lsb=19
+prog=40
+[["XG Voices"."BASS"]]
+name="SmoothSynBass"
+msb=0
+lsb=32
+prog=40
+[["XG Voices"."BASS"]]
+name="ModulrSynBass"
+msb=0
+lsb=40
+prog=40
+[["XG Voices"."BASS"]]
+name="DXBass"
+msb=0
+lsb=41
+prog=40
+[["XG Voices"."BASS"]]
+name="XWireBass"
+msb=0
+lsb=64
+prog=40
+
+[["XG Voices"."STRINGS"]]
+name="Violin"
+msb=0
+lsb=0
+prog=41
+[["XG Voices"."STRINGS"]]
+name="SlowAttackViolin"
+msb=0
+lsb=8
+prog=41
+[["XG Voices"."STRINGS"]]
+name="Viola"
+msb=0
+lsb=0
+prog=42
+[["XG Voices"."STRINGS"]]
+name="Cello"
+msb=0
+lsb=0
+prog=43
+[["XG Voices"."STRINGS"]]
+name="Contrabass"
+msb=0
+lsb=0
+prog=44
+[["XG Voices"."STRINGS"]]
+name="TremoloStrings"
+msb=0
+lsb=0
+prog=45
+[["XG Voices"."STRINGS"]]
+name="SlwAtkTremStr"
+msb=0
+lsb=8
+prog=45
+[["XG Voices"."STRINGS"]]
+name="SuspenseStrings"
+msb=0
+lsb=40
+prog=45
+[["XG Voices"."STRINGS"]]
+name="PizzicatoStrings"
+msb=0
+lsb=0
+prog=46
+[["XG Voices"."STRINGS"]]
+name="OrchestralHarp"
+msb=0
+lsb=0
+prog=47
+[["XG Voices"."STRINGS"]]
+name="YangQin"
+msb=0
+lsb=40
+prog=47
+[["XG Voices"."STRINGS"]]
+name="Timpani"
+msb=0
+lsb=0
+prog=48
+
+[["XG Voices"."ENSEMBLE"]]
+name="Strings1"
+msb=0
+lsb=0
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="StereoStrings"
+msb=0
+lsb=3
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="SlwAtkStrings"
+msb=0
+lsb=8
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="ArcoStrings"
+msb=0
+lsb=24
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="60sStrings"
+msb=0
+lsb=35
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="Orchestra"
+msb=0
+lsb=40
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="Orchestra2"
+msb=0
+lsb=41
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="TremoloOrchstra"
+msb=0
+lsb=42
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="VelocityStrings"
+msb=0
+lsb=45
+prog=49
+[["XG Voices"."ENSEMBLE"]]
+name="Strings2"
+msb=0
+lsb=0
+prog=50
+[["XG Voices"."ENSEMBLE"]]
+name="StereoSlwStrings"
+msb=0
+lsb=3
+prog=50
+[["XG Voices"."ENSEMBLE"]]
+name="LegatoStrings"
+msb=0
+lsb=8
+prog=50
+[["XG Voices"."ENSEMBLE"]]
+name="WarmStrings"
+msb=0
+lsb=40
+prog=50
+[["XG Voices"."ENSEMBLE"]]
+name="Kingdom"
+msb=0
+lsb=41
+prog=50
+[["XG Voices"."ENSEMBLE"]]
+name="70sStrings"
+msb=0
+lsb=64
+prog=50
+[["XG Voices"."ENSEMBLE"]]
+name="Strings3"
+msb=0
+lsb=65
+prog=50
+[["XG Voices"."ENSEMBLE"]]
+name="SynthStrings1"
+msb=0
+lsb=0
+prog=51
+[["XG Voices"."ENSEMBLE"]]
+name="ResonantStrings"
+msb=0
+lsb=27
+prog=51
+[["XG Voices"."ENSEMBLE"]]
+name="SynthStrings4"
+msb=0
+lsb=64
+prog=51
+[["XG Voices"."ENSEMBLE"]]
+name="SynthStrings5"
+msb=0
+lsb=65
+prog=51
+[["XG Voices"."ENSEMBLE"]]
+name="SynthStrings2"
+msb=0
+lsb=0
+prog=52
+[["XG Voices"."ENSEMBLE"]]
+name="ChoirAahs"
+msb=0
+lsb=0
+prog=53
+[["XG Voices"."ENSEMBLE"]]
+name="StereoChoir"
+msb=0
+lsb=3
+prog=53
+[["XG Voices"."ENSEMBLE"]]
+name="ChoirAahs2"
+msb=0
+lsb=16
+prog=53
+[["XG Voices"."ENSEMBLE"]]
+name="MellowChoir"
+msb=0
+lsb=32
+prog=53
+[["XG Voices"."ENSEMBLE"]]
+name="ChoirStrings"
+msb=0
+lsb=40
+prog=53
+[["XG Voices"."ENSEMBLE"]]
+name="VoiceOohs"
+msb=0
+lsb=0
+prog=54
+[["XG Voices"."ENSEMBLE"]]
+name="SynthVoice"
+msb=0
+lsb=0
+prog=55
+[["XG Voices"."ENSEMBLE"]]
+name="SynthVoice2"
+msb=0
+lsb=40
+prog=55
+[["XG Voices"."ENSEMBLE"]]
+name="Choral"
+msb=0
+lsb=41
+prog=55
+[["XG Voices"."ENSEMBLE"]]
+name="AnalogVoice"
+msb=0
+lsb=64
+prog=55
+[["XG Voices"."ENSEMBLE"]]
+name="OrchestraHit"
+msb=0
+lsb=0
+prog=56
+[["XG Voices"."ENSEMBLE"]]
+name="OrchestraHit2"
+msb=0
+lsb=35
+prog=56
+[["XG Voices"."ENSEMBLE"]]
+name="Impact"
+msb=0
+lsb=64
+prog=56
+
+[["XG Voices"."BRASS"]]
+name="Trumpet"
+msb=0
+lsb=0
+prog=57
+[["XG Voices"."BRASS"]]
+name="Trumpet2"
+msb=0
+lsb=16
+prog=57
+[["XG Voices"."BRASS"]]
+name="BrightTrumpet"
+msb=0
+lsb=17
+prog=57
+[["XG Voices"."BRASS"]]
+name="WarmTrumpet"
+msb=0
+lsb=32
+prog=57
+[["XG Voices"."BRASS"]]
+name="Trombone"
+msb=0
+lsb=0
+prog=58
+[["XG Voices"."BRASS"]]
+name="Trombone2"
+msb=0
+lsb=18
+prog=58
+[["XG Voices"."BRASS"]]
+name="Tuba"
+msb=0
+lsb=0
+prog=59
+[["XG Voices"."BRASS"]]
+name="Tuba2"
+msb=0
+lsb=16
+prog=59
+[["XG Voices"."BRASS"]]
+name="MutedTrumpet"
+msb=0
+lsb=0
+prog=60
+[["XG Voices"."BRASS"]]
+name="FrenchHorn"
+msb=0
+lsb=0
+prog=61
+[["XG Voices"."BRASS"]]
+name="FrenchHornSolo"
+msb=0
+lsb=6
+prog=61
+[["XG Voices"."BRASS"]]
+name="FrenchHorn2"
+msb=0
+lsb=32
+prog=61
+[["XG Voices"."BRASS"]]
+name="HornOrchestra"
+msb=0
+lsb=37
+prog=61
+[["XG Voices"."BRASS"]]
+name="BrassSection"
+msb=0
+lsb=0
+prog=62
+[["XG Voices"."BRASS"]]
+name="Tp&TbSection"
+msb=0
+lsb=35
+prog=62
+[["XG Voices"."BRASS"]]
+name="BrassSection2"
+msb=0
+lsb=40
+prog=62
+[["XG Voices"."BRASS"]]
+name="HighBrass"
+msb=0
+lsb=41
+prog=62
+[["XG Voices"."BRASS"]]
+name="MellowBrass"
+msb=0
+lsb=42
+prog=62
+[["XG Voices"."BRASS"]]
+name="SynthBrass1"
+msb=0
+lsb=0
+prog=63
+[["XG Voices"."BRASS"]]
+name="QuackBrass"
+msb=0
+lsb=12
+prog=63
+[["XG Voices"."BRASS"]]
+name="ResoSynthBrass"
+msb=0
+lsb=20
+prog=63
+[["XG Voices"."BRASS"]]
+name="PolyBrass"
+msb=0
+lsb=24
+prog=63
+[["XG Voices"."BRASS"]]
+name="SynthBrass3"
+msb=0
+lsb=27
+prog=63
+[["XG Voices"."BRASS"]]
+name="JumpBrass"
+msb=0
+lsb=32
+prog=63
+[["XG Voices"."BRASS"]]
+name="An.VeloBrass1"
+msb=0
+lsb=45
+prog=63
+[["XG Voices"."BRASS"]]
+name="AnalogBrass1"
+msb=0
+lsb=64
+prog=63
+[["XG Voices"."BRASS"]]
+name="SynthBrass2"
+msb=0
+lsb=0
+prog=64
+[["XG Voices"."BRASS"]]
+name="SoftBrass"
+msb=0
+lsb=18
+prog=64
+[["XG Voices"."BRASS"]]
+name="SynthBrass4"
+msb=0
+lsb=40
+prog=64
+[["XG Voices"."BRASS"]]
+name="ChoirBrass"
+msb=0
+lsb=41
+prog=64
+[["XG Voices"."BRASS"]]
+name="An.VeloBrass2"
+msb=0
+lsb=45
+prog=64
+[["XG Voices"."BRASS"]]
+name="AnalogBrass2"
+msb=0
+lsb=64
+prog=64
+
+[["XG Voices"."REED"]]
+name="SopranoSax"
+msb=0
+lsb=0
+prog=65
+[["XG Voices"."REED"]]
+name="AltoSax"
+msb=0
+lsb=0
+prog=66
+[["XG Voices"."REED"]]
+name="SaxSection"
+msb=0
+lsb=40
+prog=66
+[["XG Voices"."REED"]]
+name="HyperAltoSax"
+msb=0
+lsb=43
+prog=66
+[["XG Voices"."REED"]]
+name="TenorSax"
+msb=0
+lsb=0
+prog=67
+[["XG Voices"."REED"]]
+name="BreathyTenor"
+msb=0
+lsb=40
+prog=67
+[["XG Voices"."REED"]]
+name="SoftTenorSax"
+msb=0
+lsb=41
+prog=67
+[["XG Voices"."REED"]]
+name="TenorSax2"
+msb=0
+lsb=64
+prog=67
+[["XG Voices"."REED"]]
+name="BaritoneSax"
+msb=0
+lsb=0
+prog=68
+[["XG Voices"."REED"]]
+name="Oboe"
+msb=0
+lsb=0
+prog=69
+[["XG Voices"."REED"]]
+name="EnglishHorn"
+msb=0
+lsb=0
+prog=70
+[["XG Voices"."REED"]]
+name="Bassoon"
+msb=0
+lsb=0
+prog=71
+[["XG Voices"."REED"]]
+name="Clarinet"
+msb=0
+lsb=0
+prog=72
+
+[["XG Voices"."PIPE"]]
+name="Piccolo"
+msb=0
+lsb=0
+prog=73
+[["XG Voices"."PIPE"]]
+name="Flute"
+msb=0
+lsb=0
+prog=74
+[["XG Voices"."PIPE"]]
+name="Recorder"
+msb=0
+lsb=0
+prog=75
+[["XG Voices"."PIPE"]]
+name="PanFlute"
+msb=0
+lsb=0
+prog=76
+[["XG Voices"."PIPE"]]
+name="BlownBottle"
+msb=0
+lsb=0
+prog=77
+[["XG Voices"."PIPE"]]
+name="Shakuhachi"
+msb=0
+lsb=0
+prog=78
+[["XG Voices"."PIPE"]]
+name="Whistle"
+msb=0
+lsb=0
+prog=79
+[["XG Voices"."PIPE"]]
+name="Ocarina"
+msb=0
+lsb=0
+prog=80
+
+[["XG Voices"."SYNTH LEAD"]]
+name="SquareLead"
+msb=0
+lsb=0
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="SquareLead2"
+msb=0
+lsb=6
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="LMSquare"
+msb=0
+lsb=8
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="Hollow"
+msb=0
+lsb=18
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="Shroud"
+msb=0
+lsb=19
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="Mellow"
+msb=0
+lsb=64
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="SoloSine"
+msb=0
+lsb=65
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="SineLead"
+msb=0
+lsb=66
+prog=81
+[["XG Voices"."SYNTH LEAD"]]
+name="SawtoothLead"
+msb=0
+lsb=0
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="SawtoothLead2"
+msb=0
+lsb=6
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="ThickSaw"
+msb=0
+lsb=8
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="DynamicSaw"
+msb=0
+lsb=18
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="DigitalSaw"
+msb=0
+lsb=19
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="BigLead"
+msb=0
+lsb=20
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="HeavySynth"
+msb=0
+lsb=24
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="WaspySynth"
+msb=0
+lsb=25
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="PulseSaw"
+msb=0
+lsb=40
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="Dr.Lead"
+msb=0
+lsb=41
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="VelocityLead"
+msb=0
+lsb=45
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="SequenceAnalog"
+msb=0
+lsb=96
+prog=82
+[["XG Voices"."SYNTH LEAD"]]
+name="CalliopeLead"
+msb=0
+lsb=0
+prog=83
+[["XG Voices"."SYNTH LEAD"]]
+name="PureLead"
+msb=0
+lsb=65
+prog=83
+[["XG Voices"."SYNTH LEAD"]]
+name="ChiffLead"
+msb=0
+lsb=0
+prog=84
+[["XG Voices"."SYNTH LEAD"]]
+name="Rubby"
+msb=0
+lsb=64
+prog=84
+[["XG Voices"."SYNTH LEAD"]]
+name="CharangLead"
+msb=0
+lsb=0
+prog=85
+[["XG Voices"."SYNTH LEAD"]]
+name="DistortedLead"
+msb=0
+lsb=64
+prog=85
+[["XG Voices"."SYNTH LEAD"]]
+name="WireLead"
+msb=0
+lsb=65
+prog=85
+[["XG Voices"."SYNTH LEAD"]]
+name="VoiceLead"
+msb=0
+lsb=0
+prog=86
+[["XG Voices"."SYNTH LEAD"]]
+name="SynthAahs"
+msb=0
+lsb=24
+prog=86
+[["XG Voices"."SYNTH LEAD"]]
+name="VoxLead"
+msb=0
+lsb=64
+prog=86
+[["XG Voices"."SYNTH LEAD"]]
+name="FifthsLead"
+msb=0
+lsb=0
+prog=87
+[["XG Voices"."SYNTH LEAD"]]
+name="BigFive"
+msb=0
+lsb=35
+prog=87
+[["XG Voices"."SYNTH LEAD"]]
+name="Bass&Lead"
+msb=0
+lsb=0
+prog=88
+[["XG Voices"."SYNTH LEAD"]]
+name="Big&Low"
+msb=0
+lsb=16
+prog=88
+[["XG Voices"."SYNTH LEAD"]]
+name="Fat&Perky"
+msb=0
+lsb=64
+prog=88
+[["XG Voices"."SYNTH LEAD"]]
+name="SoftWhirl"
+msb=0
+lsb=65
+prog=88
+
+[["XG Voices"."SYNTH PAD"]]
+name="NewAgePad"
+msb=0
+lsb=0
+prog=89
+[["XG Voices"."SYNTH PAD"]]
+name="Fantasy"
+msb=0
+lsb=64
+prog=89
+[["XG Voices"."SYNTH PAD"]]
+name="WarmPad"
+msb=0
+lsb=0
+prog=90
+[["XG Voices"."SYNTH PAD"]]
+name="ThickPad"
+msb=0
+lsb=16
+prog=90
+[["XG Voices"."SYNTH PAD"]]
+name="SoftPad"
+msb=0
+lsb=17
+prog=90
+[["XG Voices"."SYNTH PAD"]]
+name="SinePad"
+msb=0
+lsb=18
+prog=90
+[["XG Voices"."SYNTH PAD"]]
+name="HornPad"
+msb=0
+lsb=64
+prog=90
+[["XG Voices"."SYNTH PAD"]]
+name="RotaryStrings"
+msb=0
+lsb=65
+prog=90
+[["XG Voices"."SYNTH PAD"]]
+name="PolySynthPad"
+msb=0
+lsb=0
+prog=91
+[["XG Voices"."SYNTH PAD"]]
+name="PolyPad80"
+msb=0
+lsb=64
+prog=91
+[["XG Voices"."SYNTH PAD"]]
+name="ClickPad"
+msb=0
+lsb=65
+prog=91
+[["XG Voices"."SYNTH PAD"]]
+name="AnalogPad"
+msb=0
+lsb=66
+prog=91
+[["XG Voices"."SYNTH PAD"]]
+name="SquarePad"
+msb=0
+lsb=67
+prog=91
+[["XG Voices"."SYNTH PAD"]]
+name="ChoirPad"
+msb=0
+lsb=0
+prog=92
+[["XG Voices"."SYNTH PAD"]]
+name="Heaven"
+msb=0
+lsb=64
+prog=92
+[["XG Voices"."SYNTH PAD"]]
+name="Itopia"
+msb=0
+lsb=66
+prog=92
+[["XG Voices"."SYNTH PAD"]]
+name="CCPad"
+msb=0
+lsb=67
+prog=92
+[["XG Voices"."SYNTH PAD"]]
+name="BowedPad"
+msb=0
+lsb=0
+prog=93
+[["XG Voices"."SYNTH PAD"]]
+name="Glacier"
+msb=0
+lsb=64
+prog=93
+[["XG Voices"."SYNTH PAD"]]
+name="GlassPad"
+msb=0
+lsb=65
+prog=93
+[["XG Voices"."SYNTH PAD"]]
+name="MetallicPad"
+msb=0
+lsb=0
+prog=94
+[["XG Voices"."SYNTH PAD"]]
+name="TinePad"
+msb=0
+lsb=64
+prog=94
+[["XG Voices"."SYNTH PAD"]]
+name="PanPad"
+msb=0
+lsb=65
+prog=94
+[["XG Voices"."SYNTH PAD"]]
+name="HaloPad"
+msb=0
+lsb=0
+prog=95
+[["XG Voices"."SYNTH PAD"]]
+name="SweepPad"
+msb=0
+lsb=0
+prog=96
+[["XG Voices"."SYNTH PAD"]]
+name="Shwimmer"
+msb=0
+lsb=20
+prog=96
+[["XG Voices"."SYNTH PAD"]]
+name="Converge"
+msb=0
+lsb=27
+prog=96
+[["XG Voices"."SYNTH PAD"]]
+name="PolarPad"
+msb=0
+lsb=64
+prog=96
+[["XG Voices"."SYNTH PAD"]]
+name="Celestial"
+msb=0
+lsb=66
+prog=96
+
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Rain"
+msb=0
+lsb=0
+prog=97
+[["XG Voices"."SYNTH EFFECTS"]]
+name="ClaviPad"
+msb=0
+lsb=45
+prog=97
+[["XG Voices"."SYNTH EFFECTS"]]
+name="HarmoRain"
+msb=0
+lsb=64
+prog=97
+[["XG Voices"."SYNTH EFFECTS"]]
+name="AfricanWind"
+msb=0
+lsb=65
+prog=97
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Carib"
+msb=0
+lsb=66
+prog=97
+[["XG Voices"."SYNTH EFFECTS"]]
+name="SoundTrack"
+msb=0
+lsb=0
+prog=98
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Prologue"
+msb=0
+lsb=27
+prog=98
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Ancestral"
+msb=0
+lsb=64
+prog=98
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Crystal"
+msb=0
+lsb=0
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="SynthDrumComp"
+msb=0
+lsb=12
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Popcorn"
+msb=0
+lsb=14
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="TinyBells"
+msb=0
+lsb=18
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="RoundGlocken"
+msb=0
+lsb=35
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="GlockenChime"
+msb=0
+lsb=40
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="ClearBells"
+msb=0
+lsb=41
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="ChorusBells"
+msb=0
+lsb=42
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="SynthMallet"
+msb=0
+lsb=64
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="SoftCrystal"
+msb=0
+lsb=65
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="LoudGlocken"
+msb=0
+lsb=66
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="ChristmasBells"
+msb=0
+lsb=67
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="VibraphoneBells"
+msb=0
+lsb=68
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="DigitalBells"
+msb=0
+lsb=69
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="AirBells"
+msb=0
+lsb=70
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="BellHarp"
+msb=0
+lsb=71
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Gamelimba"
+msb=0
+lsb=72
+prog=99
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Atmosphere"
+msb=0
+lsb=0
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="WarmAtmos."
+msb=0
+lsb=18
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="HollwRelease"
+msb=0
+lsb=19
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="NylonEl.Piano"
+msb=0
+lsb=40
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="NylonHarp"
+msb=0
+lsb=64
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="HarpVox"
+msb=0
+lsb=65
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="AtmospherePad"
+msb=0
+lsb=66
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Planet"
+msb=0
+lsb=67
+prog=100
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Brightness"
+msb=0
+lsb=0
+prog=101
+[["XG Voices"."SYNTH EFFECTS"]]
+name="FantasyBells"
+msb=0
+lsb=64
+prog=101
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Smokey"
+msb=0
+lsb=96
+prog=101
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Goblins"
+msb=0
+lsb=0
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="GoblinsSynth"
+msb=0
+lsb=64
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Creeper"
+msb=0
+lsb=65
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="RingPad"
+msb=0
+lsb=66
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Ritual"
+msb=0
+lsb=67
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="ToHeaven"
+msb=0
+lsb=68
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Night"
+msb=0
+lsb=70
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Glisten"
+msb=0
+lsb=71
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="BellChoir"
+msb=0
+lsb=96
+prog=102
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Echoes"
+msb=0
+lsb=0
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Echoes2"
+msb=0
+lsb=8
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="EchoPan"
+msb=0
+lsb=14
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="EchoBells"
+msb=0
+lsb=64
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="BigPan"
+msb=0
+lsb=65
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="SynthPiano"
+msb=0
+lsb=66
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Creation"
+msb=0
+lsb=67
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Stardust"
+msb=0
+lsb=68
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Reso&Panning"
+msb=0
+lsb=69
+prog=103
+[["XG Voices"."SYNTH EFFECTS"]]
+name="ScienceFiction"
+msb=0
+lsb=0
+prog=104
+[["XG Voices"."SYNTH EFFECTS"]]
+name="Starz"
+msb=0
+lsb=64
+prog=104
+
+[["XG Voices"."ETHNIC"]]
+name="Sitar"
+msb=0
+lsb=0
+prog=105
+[["XG Voices"."ETHNIC"]]
+name="DetunedSitar"
+msb=0
+lsb=32
+prog=105
+[["XG Voices"."ETHNIC"]]
+name="Sitar2"
+msb=0
+lsb=35
+prog=105
+[["XG Voices"."ETHNIC"]]
+name="Tambra"
+msb=0
+lsb=96
+prog=105
+[["XG Voices"."ETHNIC"]]
+name="Tamboura"
+msb=0
+lsb=97
+prog=105
+[["XG Voices"."ETHNIC"]]
+name="Banjo"
+msb=0
+lsb=0
+prog=106
+[["XG Voices"."ETHNIC"]]
+name="MutedBanjo"
+msb=0
+lsb=28
+prog=106
+[["XG Voices"."ETHNIC"]]
+name="Rabab"
+msb=0
+lsb=96
+prog=106
+[["XG Voices"."ETHNIC"]]
+name="Gopichant"
+msb=0
+lsb=97
+prog=106
+[["XG Voices"."ETHNIC"]]
+name="Oud"
+msb=0
+lsb=98
+prog=106
+[["XG Voices"."ETHNIC"]]
+name="Shamisen"
+msb=0
+lsb=0
+prog=107
+[["XG Voices"."ETHNIC"]]
+name="Koto"
+msb=0
+lsb=0
+prog=108
+[["XG Voices"."ETHNIC"]]
+name="Taisho-kin"
+msb=0
+lsb=96
+prog=108
+[["XG Voices"."ETHNIC"]]
+name="Kanoon"
+msb=0
+lsb=97
+prog=108
+[["XG Voices"."ETHNIC"]]
+name="Kalimba"
+msb=0
+lsb=0
+prog=109
+[["XG Voices"."ETHNIC"]]
+name="Bagpipe"
+msb=0
+lsb=0
+prog=110
+[["XG Voices"."ETHNIC"]]
+name="Fiddle"
+msb=0
+lsb=0
+prog=111
+[["XG Voices"."ETHNIC"]]
+name="Shanai"
+msb=0
+lsb=0
+prog=112
+[["XG Voices"."ETHNIC"]]
+name="Shanai2"
+msb=0
+lsb=64
+prog=112
+[["XG Voices"."ETHNIC"]]
+name="Pungi"
+msb=0
+lsb=96
+prog=112
+[["XG Voices"."ETHNIC"]]
+name="Hichiriki"
+msb=0
+lsb=97
+prog=112
+
+[["XG Voices"."PERCUSSIVE"]]
+name="TinkleBell"
+msb=0
+lsb=0
+prog=113
+[["XG Voices"."PERCUSSIVE"]]
+name="Bonang"
+msb=0
+lsb=96
+prog=113
+[["XG Voices"."PERCUSSIVE"]]
+name="Altair"
+msb=0
+lsb=97
+prog=113
+[["XG Voices"."PERCUSSIVE"]]
+name="GamelanGongs"
+msb=0
+lsb=98
+prog=113
+[["XG Voices"."PERCUSSIVE"]]
+name="StereoGamlan"
+msb=0
+lsb=99
+prog=113
+[["XG Voices"."PERCUSSIVE"]]
+name="RamaCymbal"
+msb=0
+lsb=100
+prog=113
+[["XG Voices"."PERCUSSIVE"]]
+name="AsianBells"
+msb=0
+lsb=101
+prog=113
+[["XG Voices"."PERCUSSIVE"]]
+name="PERCUSSIVE Agogo"
+msb=0
+lsb=0
+prog=114
+[["XG Voices"."PERCUSSIVE"]]
+name="SteelDrums"
+msb=0
+lsb=0
+prog=115
+[["XG Voices"."PERCUSSIVE"]]
+name="GlassPercussion"
+msb=0
+lsb=97
+prog=115
+[["XG Voices"."PERCUSSIVE"]]
+name="ThaiBells"
+msb=0
+lsb=98
+prog=115
+[["XG Voices"."PERCUSSIVE"]]
+name="Woodblock"
+msb=0
+lsb=0
+prog=116
+[["XG Voices"."PERCUSSIVE"]]
+name="Castanets"
+msb=0
+lsb=96
+prog=116
+[["XG Voices"."PERCUSSIVE"]]
+name="TaikoDrum"
+msb=0
+lsb=0
+prog=117
+[["XG Voices"."PERCUSSIVE"]]
+name="GranCassa"
+msb=0
+lsb=96
+prog=117
+[["XG Voices"."PERCUSSIVE"]]
+name="MelodicTom"
+msb=0
+lsb=0
+prog=118
+[["XG Voices"."PERCUSSIVE"]]
+name="MelodicTom2"
+msb=0
+lsb=64
+prog=118
+[["XG Voices"."PERCUSSIVE"]]
+name="RealTom"
+msb=0
+lsb=65
+prog=118
+[["XG Voices"."PERCUSSIVE"]]
+name="RockTom"
+msb=0
+lsb=66
+prog=118
+[["XG Voices"."PERCUSSIVE"]]
+name="SynthDrum"
+msb=0
+lsb=0
+prog=119
+[["XG Voices"."PERCUSSIVE"]]
+name="AnalogTom"
+msb=0
+lsb=64
+prog=119
+[["XG Voices"."PERCUSSIVE"]]
+name="ElectroPerc."
+msb=0
+lsb=65
+prog=119
+[["XG Voices"."PERCUSSIVE"]]
+name="ReverseCymbal"
+msb=0
+lsb=0
+prog=120
+
+[["XG Voices"."SOUND EFFECTS"]]
+name="GuitarFretNoise"
+msb=0
+lsb=0
+prog=121
+[["XG Voices"."SOUND EFFECTS"]]
+name="BreathNoise"
+msb=0
+lsb=0
+prog=122
+[["XG Voices"."SOUND EFFECTS"]]
+name="Seashore"
+msb=0
+lsb=0
+prog=123
+[["XG Voices"."SOUND EFFECTS"]]
+name="BirdTweet"
+msb=0
+lsb=0
+prog=124
+[["XG Voices"."SOUND EFFECTS"]]
+name="TelephoneRing"
+msb=0
+lsb=0
+prog=125
+[["XG Voices"."SOUND EFFECTS"]]
+name="Helicopter"
+msb=0
+lsb=0
+prog=126
+[["XG Voices"."SOUND EFFECTS"]]
+name="Applause"
+msb=0
+lsb=0
+prog=127
+[["XG Voices"."SOUND EFFECTS"]]
+name="Gunshot"
+msb=0
+lsb=0
+prog=128
+
+[["XG Voices"."SFX"]]
+name="CuttingNoise"
+msb=64
+lsb=0
+prog=1
+[["XG Voices"."SFX"]]
+name="CuttingNoise2"
+msb=64
+lsb=0
+prog=2
+[["XG Voices"."SFX"]]
+name="StringSlap"
+msb=64
+lsb=0
+prog=4
+[["XG Voices"."SFX"]]
+name="FluteKeyClick"
+msb=64
+lsb=0
+prog=17
+[["XG Voices"."SFX"]]
+name="Shower"
+msb=64
+lsb=0
+prog=33
+[["XG Voices"."SFX"]]
+name="Thunder"
+msb=64
+lsb=0
+prog=34
+[["XG Voices"."SFX"]]
+name="Wind"
+msb=64
+lsb=0
+prog=35
+[["XG Voices"."SFX"]]
+name="Stream"
+msb=64
+lsb=0
+prog=36
+[["XG Voices"."SFX"]]
+name="Bubble"
+msb=64
+lsb=0
+prog=37
+[["XG Voices"."SFX"]]
+name="Feed"
+msb=64
+lsb=0
+prog=38
+[["XG Voices"."SFX"]]
+name="Dog"
+msb=64
+lsb=0
+prog=49
+[["XG Voices"."SFX"]]
+name="Horse"
+msb=64
+lsb=0
+prog=50
+[["XG Voices"."SFX"]]
+name="BirdTweet2"
+msb=64
+lsb=0
+prog=51
+[["XG Voices"."SFX"]]
+name="Ghost"
+msb=64
+lsb=0
+prog=55
+[["XG Voices"."SFX"]]
+name="Maou"
+msb=64
+lsb=0
+prog=56
+[["XG Voices"."SFX"]]
+name="PhoneCall"
+msb=64
+lsb=0
+prog=65
+[["XG Voices"."SFX"]]
+name="DoorSqueak"
+msb=64
+lsb=0
+prog=66
+[["XG Voices"."SFX"]]
+name="DoorSlam"
+msb=64
+lsb=0
+prog=67
+[["XG Voices"."SFX"]]
+name="ScratchCut"
+msb=64
+lsb=0
+prog=68
+[["XG Voices"."SFX"]]
+name="ScratchSplit"
+msb=64
+lsb=0
+prog=69
+[["XG Voices"."SFX"]]
+name="WindChime"
+msb=64
+lsb=0
+prog=70
+[["XG Voices"."SFX"]]
+name="TelephoneRing2"
+msb=64
+lsb=0
+prog=71
+[["XG Voices"."SFX"]]
+name="CarEngineIgn"
+msb=64
+lsb=0
+prog=81
+[["XG Voices"."SFX"]]
+name="CarTiresSqel"
+msb=64
+lsb=0
+prog=82
+[["XG Voices"."SFX"]]
+name="CarPassing"
+msb=64
+lsb=0
+prog=83
+[["XG Voices"."SFX"]]
+name="CarCrash"
+msb=64
+lsb=0
+prog=84
+[["XG Voices"."SFX"]]
+name="Siren"
+msb=64
+lsb=0
+prog=85
+[["XG Voices"."SFX"]]
+name="Train"
+msb=64
+lsb=0
+prog=86
+[["XG Voices"."SFX"]]
+name="JetPlane"
+msb=64
+lsb=0
+prog=87
+[["XG Voices"."SFX"]]
+name="Starship"
+msb=64
+lsb=0
+prog=88
+[["XG Voices"."SFX"]]
+name="Burst"
+msb=64
+lsb=0
+prog=89
+[["XG Voices"."SFX"]]
+name="RollerCoaster"
+msb=64
+lsb=0
+prog=90
+[["XG Voices"."SFX"]]
+name="Submarine"
+msb=64
+lsb=0
+prog=91
+[["XG Voices"."SFX"]]
+name="Laugh"
+msb=64
+lsb=0
+prog=97
+[["XG Voices"."SFX"]]
+name="Scream"
+msb=64
+lsb=0
+prog=98
+[["XG Voices"."SFX"]]
+name="Punch"
+msb=64
+lsb=0
+prog=99
+[["XG Voices"."SFX"]]
+name="Heartbeat"
+msb=64
+lsb=0
+prog=100
+[["XG Voices"."SFX"]]
+name="FootSteps"
+msb=64
+lsb=0
+prog=101
+[["XG Voices"."SFX"]]
+name="MachineGun"
+msb=64
+lsb=0
+prog=113
+[["XG Voices"."SFX"]]
+name="LaserGun"
+msb=64
+lsb=0
+prog=114
+[["XG Voices"."SFX"]]
+name="Explosion"
+msb=64
+lsb=0
+prog=115
+[["XG Voices"."SFX"]]
+name="Firework"
+msb=64
+lsb=0
+prog=116

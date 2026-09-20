@@ -1,0 +1,5 @@
+# Cakewalk 는 Windows 애플리케이션이므로 .ins 를 CRLF 로 체크아웃한다.
+# 저장소에는 LF 로 정규화해 두어 diff 가 플랫폼에 흔들리지 않게 한다.
+# 이 파일이 없으면 core.autocrlf=input 이 커밋 시 CRLF 를 LF 로 되돌려,
+# Windows 사용자가 받는 파일이 LF 가 된다.
+*.ins text eol=crlf

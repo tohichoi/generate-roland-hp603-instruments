@@ -1,0 +1,326 @@
+Piano
+1 Concert Piano 0 68 0
+2 Ballad Piano 16 67 0
+3 Mellow Piano 4 64 0
+4 Bright Piano 8 66 1
+E.Piano
+1 Tremolo EP 0 69 4
+2 Pop EP 16 67 4
+3 Vintage EP 0 67 4
+4 FM E.Piano 0 70 5
+5 EP Belle 8 68 5
+6 '60s EP 24 65 4
+7 Clav. 0 67 7
+8 Stage Phaser 0 68 4
+9 '70s EP 16 66 4
+10 E.Grand 0 69 2
+Organ
+1 Pipe Organ 8 70 19
+2 Nason flt 8' 16 66 19
+3 Combo Jz.Org 0 70 18
+4 Ballad Organ 0 69 18
+5 ChurchOrgan1 0 66 19
+6 ChurchOrgan2 8 69 19
+7 Gospel Spin 0 71 16
+8 Full Stops 0 69 16
+9 Mellow Bars 32 68 16
+10 Light Organ 32 69 16
+11 Lower Organ 0 66 16
+12 '60s Organ 16 64 16
+Strings
+1 SymphonicStr1 1 67 49
+2 Epic Strings 1 67 48
+3 Rich Strings 0 71 49
+4 Orchestra Str 0 64 48
+5 Orchestra 8 66 48
+6 Chamber Winds 0 67 68
+7 Harp 0 68 46
+8 Violin 0 0 40
+9 Velo Strings 1 65 48
+10 Flute 0 64 73
+11 Cello 0 0 42
+12 OrchestraBrs 1 66 60
+13 Pizzicato Str 0 0 45
+14 SymphonicStr2 1 65 49
+15 Soft Pad 0 64 89
+16 Magical Piano 47 65 2
+17 Jazz Scat 0 65 54
+Upright
+1 Upright Piano 16 64 0
+2 Mellow Upright 1 65 0
+3 Bright Upright 1 66 0
+4 Rock Piano 8 64 2
+5 Ragtime Piano 0 64 3
+Classical
+1 Fortepiano 2 64 0
+2 Mellow Forte 2 65 0
+3 Bright Forte 2 66 0
+4 Harpsichord 0 67 6
+5 Harpsi 8'+4' 8 67 6
+Drums
+1 STANDARD Set 120 0 0
+2 ROOM Set 120 0 8
+3 POWER Set 120 0 16
+4 ELEC.Set 120 0 24
+5 ANALOG Set 120 0 25
+6 JAZZ Set 120 0 32
+7 BRUSH Set 120 0 40
+8 ORCH.Set 120 0 48
+9 SFX Set 120 0 56
+GM2
+1 Piano 1 121 0 0
+2 Piano 1w 121 1 0
+3 Piano 1d 121 2 0
+4 Piano 2 121 0 1
+5 Piano 2w 121 1 1
+6 Piano 3 121 0 2
+7 Piano 3w 121 1 2
+8 Honky-tonk 121 0 3
+9 Honky-tonk w 121 1 3
+10 E.Piano 1 121 0 4
+11 Detuned EP 1 121 1 4
+12 Vintage EP 121 2 4
+13 '60s E.Piano 121 3 4
+14 E.Piano 2 121 0 5
+15 Detuned EP 2 121 1 5
+16 St.FM EP 121 2 5
+17 EP Legend 121 3 5
+18 EP Phase 121 4 5
+19 Harpsi. 121 0 6
+20 Coupled Hps. 121 1 6
+21 Harpsi.w 121 2 6
+22 Harpsi.o 121 3 6
+23 Clav. 121 0 7
+24 Pulse Clav. 121 1 7
+25 Celesta 121 0 8
+26 Glockenspiel 121 0 9
+27 Music Box 121 0 10
+28 Vibraphone 121 0 11
+29 Vibraphone w 121 1 11
+30 Marimba 121 0 12
+31 Marimba w 121 1 12
+32 Xylophone 121 0 13
+33 TubularBells 121 0 14
+34 Church Bell 121 1 14
+35 Carillon 121 2 14
+36 Santur 121 0 15
+37 Organ 1 121 0 16
+38 TremoloOrgan 121 1 16
+39 '60s Organ 121 2 16
+40 Organ 2 121 3 16
+41 Perc.Organ 1 121 0 17
+42 Chorus Organ 121 1 17
+43 Perc.Organ 2 121 2 17
+44 Rock Organ 121 0 18
+45 Church Org.1 121 0 19
+46 Church Org.2 121 1 19
+47 Church Org.3 121 2 19
+48 Reed Organ 121 0 20
+49 Puff Organ 121 1 20
+50 Accordion 1 121 0 21
+51 Accordion 2 121 1 21
+52 Harmonica 121 0 22
+53 Bandoneon 121 0 23
+54 Nylon-str.Gt 121 0 24
+55 Ukulele 121 1 24
+56 Nylon Gt o 121 2 24
+57 Nylon Gt 2 121 3 24
+58 Steel-str.Gt 121 0 25
+59 12-str.Gt 121 1 25
+60 Mandolin 121 2 25
+61 Steel+Body 121 3 25
+62 Jazz Guitar 121 0 26
+63 Hawaiian Gt 121 1 26
+64 Clean Guitar 121 0 27
+65 Chorus Gt 1 121 1 27
+66 Mid Tone Gt 121 2 27
+67 Muted Guitar 121 0 28
+68 Funk Guitar1 121 1 28
+69 Funk Guitar2 121 2 28
+70 Chorus Gt 2 121 3 28
+71 Overdrive Gt 121 0 29
+72 Guitar Pinch 121 1 29
+73 DistortionGt 121 0 30
+74 Gt Feedback1 121 1 30
+75 Dist.Rtm Gt 121 2 30
+76 Gt Harmonics 121 0 31
+77 Gt Feedback2 121 1 31
+78 AcousticBass 121 0 32
+79 FingeredBass 121 0 33
+80 Finger Slap 121 1 33
+81 Picked Bass 121 0 34
+82 FretlessBass 121 0 35
+83 Slap Bass 1 121 0 36
+84 Slap Bass 2 121 0 37
+85 Synth Bass 1 121 0 38
+86 WarmSyn.Bass 121 1 38
+87 Synth Bass 3 121 2 38
+88 Clav.Bass 121 3 38
+89 Hammer 121 4 38
+90 Synth Bass 2 121 0 39
+91 Synth Bass 4 121 1 39
+92 RubberSyn.Bs 121 2 39
+93 Attack Pulse 121 3 39
+94 Violin 121 0 40
+95 Slow Violin 121 1 40
+96 Viola 121 0 41
+97 Cello 121 0 42
+98 Contrabass 121 0 43
+99 Tremolo Str. 121 0 44
+100 PizzicatoStr 121 0 45
+101 Harp 121 0 46
+102 Yang Qin 121 1 46
+103 Timpani 121 0 47
+104 Strings 121 0 48
+105 Orchestra 121 1 48
+106 '60s Strings 121 2 48
+107 Slow Strings 121 0 49
+108 Syn.Strings1 121 0 50
+109 Syn.Strings3 121 1 50
+110 Syn.Strings2 121 0 51
+111 Choir 1 121 0 52
+112 Choir 2 121 1 52
+113 Voice 121 0 53
+114 Humming 121 1 53
+115 Synth Voice 121 0 54
+116 Analog Voice 121 1 54
+117 OrchestraHit 121 0 55
+118 Bass Hit 121 1 55
+119 6th Hit 121 2 55
+120 Euro Hit 121 3 55
+121 Trumpet 121 0 56
+122 Dark Trumpet 121 1 56
+123 Trombone 1 121 0 57
+124 Trombone 2 121 1 57
+125 Bright Tb 121 2 57
+126 Tuba 121 0 58
+127 MuteTrumpet1 121 0 59
+128 MuteTrumpet2 121 1 59
+129 French Horn1 121 0 60
+130 French Horn2 121 1 60
+131 Brass 1 121 0 61
+132 Brass 2 121 1 61
+133 Synth Brass1 121 0 62
+134 Synth Brass3 121 1 62
+135 AnalogBrass1 121 2 62
+136 Jump Brass 121 3 62
+137 Synth Brass2 121 0 63
+138 Synth Brass4 121 1 63
+139 AnalogBrass2 121 2 63
+140 Soprano Sax 121 0 64
+141 Alto Sax 121 0 65
+142 Tenor Sax 121 0 66
+143 Baritone Sax 121 0 67
+144 Oboe 121 0 68
+145 English Horn 121 0 69
+146 Bassoon 121 0 70
+147 Clarinet 121 0 71
+148 Piccolo 121 0 72
+149 Flute 121 0 73
+150 Recorder 121 0 74
+151 Pan Flute 121 0 75
+152 Bottle Blow 121 0 76
+153 Shakuhachi 121 0 77
+154 Whistle 121 0 78
+155 Ocarina 121 0 79
+156 Square Lead1 121 0 80
+157 Square Lead2 121 1 80
+158 Sine Lead 121 2 80
+159 Saw Lead 1 121 0 81
+160 Saw Lead 2 121 1 81
+161 Doctor Solo 121 2 81
+162 Natural Lead 121 3 81
+163 SequencedSaw 121 4 81
+164 Syn.Calliope 121 0 82
+165 Chiffer Lead 121 0 83
+166 Charang 121 0 84
+167 Wire Lead 121 1 84
+168 Solo Vox 121 0 85
+169 5th Saw Lead 121 0 86
+170 Bass+Lead 121 0 87
+171 Delayed Lead 121 1 87
+172 Fantasia 121 0 88
+173 Warm Pad 121 0 89
+174 Sine Pad 121 1 89
+175 Polysynth 121 0 90
+176 Space Voice 121 0 91
+177 Itopia 121 1 91
+178 Bowed Glass 121 0 92
+179 Metallic Pad 121 0 93
+180 Halo Pad 121 0 94
+181 Sweep Pad 121 0 95
+182 Ice Rain 121 0 96
+183 Soundtrack 121 0 97
+184 Crystal 121 0 98
+185 Synth Mallet 121 1 98
+186 Atmosphere 121 0 99
+187 Brightness 121 0 100
+188 Goblins 121 0 101
+189 Echo Drops 121 0 102
+190 Echo Bell 121 1 102
+191 Echo Pan 121 2 102
+192 Star Theme 121 0 103
+193 Sitar 1 121 0 104
+194 Sitar 2 121 1 104
+195 Banjo 121 0 105
+196 Shamisen 121 0 106
+197 Koto 121 0 107
+198 Taisho Koto 121 1 107
+199 Kalimba 121 0 108
+200 Bagpipe 121 0 109
+201 Fiddle 121 0 110
+202 Shanai 121 0 111
+203 Tinkle Bell 121 0 112
+204 Agogo 121 0 113
+205 Steel Drums 121 0 114
+206 Woodblock 121 0 115
+207 Castanets 121 1 115
+208 Taiko 121 0 116
+209 Concert BD 121 1 116
+210 Melodic Tom1 121 0 117
+211 Melodic Tom2 121 1 117
+212 Synth Drum 121 0 118
+213 TR-808 Tom 121 1 118
+214 Elec.Perc. 121 2 118
+215 Reverse Cym. 121 0 119
+216 Gt FretNoise 121 0 120
+217 Gt Cut Noise 121 1 120
+218 BsStringSlap 121 2 120
+219 Breath Noise 121 0 121
+220 Fl.Key Click 121 1 121
+221 Seashore 121 0 122
+222 Rain 121 1 122
+223 Thunder 121 2 122
+224 Wind 121 3 122
+225 Stream 121 4 122
+226 Bubble 121 5 122
+227 Bird 1 121 0 123
+228 Dog 121 1 123
+229 Horse Gallop 121 2 123
+230 Bird 2 121 3 123
+231 Telephone 1 121 0 124
+232 Telephone 2 121 1 124
+233 DoorCreaking 121 2 124
+234 Door 121 3 124
+235 Scratch 121 4 124
+236 Wind Chimes 121 5 124
+237 Helicopter 121 0 125
+238 Car Engine 121 1 125
+239 Car Stop 121 2 125
+240 Car Pass 121 3 125
+241 Car Crash 121 4 125
+242 Siren 121 5 125
+243 Train 121 6 125
+244 Jetplane 121 7 125
+245 Starship 121 8 125
+246 Burst Noise 121 9 125
+247 Applause 121 0 126
+248 Laughing 121 1 126
+249 Screaming 121 2 126
+250 Punch 121 3 126
+251 Heart Beat 121 4 126
+252 Footsteps 121 5 126
+253 Gun Shot 121 0 127
+254 Machine Gun 121 1 127
+255 Laser Gun 121 2 127
+256 Explosion 121 3 127

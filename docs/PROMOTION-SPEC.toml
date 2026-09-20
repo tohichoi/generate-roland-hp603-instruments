@@ -1,0 +1,78 @@
+# PROMOTION-SPEC.toml
+# MIDI Instrument Definition Generator - ATD 포트폴리오 연동 단일 규격 (SSOT)
+#
+# 편입 프레임: Adopted Project
+#   디렉터(Mike)가 2019-10 에 시작해 2025-10~12 에 확장한 개인 도구를
+#   ATD 허브에 편입하여 분석 / 감사 / 문서화를 수행한 사례.
+#   ATD 는 프로토콜 분석과 구현에 참여하지 않았으며, participating_agents 에는
+#   편입 이후 실제로 수행한 기여만 기재한다.
+#
+# 논지: 코드가 아니라 도메인 지식이 결과물의 상한을 결정한다.
+#   MIDI bank select 프로토콜을 역분석해 Roland / Yamaha 별 악기 선택
+#   주소 체계를 Cakewalk 용 .ins 로 구현한 것이 이 프로젝트의 값어치이다.
+
+[project]
+id = "midi-instrument-definition-generator"
+title = "MIDI Instrument Definition Generator"
+subtitle = "MIDI bank select 프로토콜을 역분석해 Roland·Yamaha 디지털피아노의 악기 선택 체계를 Cakewalk용 .ins로 구현한 단독 개발 도구"
+category = "AI & Automation"
+status = "Completed"
+case_study_badge = "ATD Adopted Project"
+development_time = "2단계 (2019.10 / 2025.10 ~ 12)"
+cost_reduction = "산정 제외 (개인 프로젝트)"
+lead_director = "Mike (Managing Director)"
+thumbnail = "assets/thumbnail.jpg"
+live_demo_url = ""
+repository_url = "https://github.com/tohichoi/generate-roland-hp603-instruments"
+video_demo = ""
+pdf_report = ""
+
+[[participating_agents]]
+name = "Atlas"
+role = "Chief Strategy Officer"
+contribution = "로컬-원격 기준선 불일치를 발견해 원격으로 정정하고, 829건 악기 주소를 전수 집계해 벤더별 bank 분할 구조를 규명, ATD 편입 파이프라인 편성과 대외 케이스 스터디 저술 및 감사 결과 종합"
+
+[[participating_agents]]
+name = "Leo"
+role = "System Architect"
+contribution = "데이터 리스트 전사 → bank 번호 산출 → .ins 방출로 이어지는 흐름을 명세하고, 파싱 규칙과 Cakewalk 포맷 요구사항 및 개선 백로그 도출"
+
+[[participating_agents]]
+name = "Kai"
+role = "Backend Developer"
+contribution = "bank 이름 사전의 중복 키 3건을 쌍 목록으로 전환해 조용한 이름 덮어쓰기를 제거하고, 출력 줄바꿈을 CRLF로 고정하고, Yamaha 생성기에 남은 Roland 잔재와 무동작 함수를 정리하며 벤더 오표기를 정정"
+
+[[participating_agents]]
+name = "Sora"
+role = "Creative Media Designer"
+contribution = "같은 3바이트를 두 벤더가 서로 다르게 분할하는 구조를 좌우 대조로 도판화한 16:9 대표 썸네일 제작"
+
+[[participating_agents]]
+name = "Elena"
+role = "Chief Auditor"
+contribution = "README 서술과 실제 산출물의 불일치 전수 적발, 서드파티 PDF 재배포 및 시크릿/PII 감사, 프로토콜 서술의 사실 검증, PASS/FAIL 판정"
+
+[[participating_agents]]
+name = "Noah"
+role = "Test Optimizer"
+contribution = "격리 환경에서 전사→TOML→.ins 파이프라인을 실제 실행해 검증하고, 생성 산출물의 bank·패치를 원본 데이터 829건과 전수 대조, 실행 불가 스크립트 적발"
+
+[[metrics]]
+label = "지원 기종"
+value = "2종"
+subtext = "Roland HP603 (318음색 / 40 bank) · Yamaha CLP-685 (511음색 / 53 bank)"
+
+[[metrics]]
+label = "역분석 규모"
+value = "829 주소"
+subtext = "제조사 PDF 데이터 리스트 899행에서 수작업 전사 (Roland 318 · Yamaha 511)"
+
+[[metrics]]
+label = "벤더 대조"
+value = "호환 불가"
+subtext = "Roland MSB 120·121 표준 / Yamaha MSB 0·64·108 — 공통 표기 부재"
+
+[[metrics]]
+label = "코드 규모"
+value = "498행"
+subtext = "Python 스크립트 6종 (편입 정리 후)"

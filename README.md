@@ -1,4 +1,6 @@
-# Cakewalk instrument definition generator for HP603 digital piano
+# Cakewalk instrument definition generator for digital pianos
+
+Roland HP603 과 Yamaha CLP-685 의 악기 정의 파일(`.ins`)을 생성합니다.
 
 ## Motivation
 
@@ -29,6 +31,36 @@ If you want to make an ins file, I'll give you my tools for reference(some pytho
 12. Click 'Roland HP603' on the right hand side.
 13. Click 'Apply' and 'OK'.
 
+## 재생성 방법
+
+의존성을 설치합니다. 스크립트별로 필요한 모듈이 다릅니다.
+
+| 스크립트 | 필요한 모듈 |
+| :--- | :--- |
+| `generate_cakewalk_ins.py` | 없음 (표준 라이브러리만) |
+| `generate_cakewalk_yamaha_ins.py` | `toml` |
+| `make_toml.py` | `tomli`, `rich` |
+| `find_instruments.py` | `streamlit`, `toml`, `pandas` |
+| `find_roland_gm_inst.py` | `mido` |
+| `test_program_change.py` | `python-rtmidi` |
+
+`requirements.txt` 는 UTF-16 으로 저장되어 있어 `pip install -r` 은 동작하지만, UTF-8 을 가정하는 편집기나 도구로는 읽히지 않습니다. 또한 환경 전체를 덤프한 목록이므로 `python-rtmidi` 가 빠져 있습니다.
+
+Roland 산출물은 다음 한 줄로 재생성됩니다. 데이터는 `hp603 instruments.txt` 입니다.
+
+```bash
+python3 generate_cakewalk_ins.py > "Roland HP603.ins"
+```
+
+Yamaha 산출물은 데이터 변환이 한 단계 앞에 있습니다. `data/yamaha-clp685-data.txt` 를 먼저 TOML 로 바꾼 뒤 생성합니다.
+
+```bash
+python3 make_toml.py                              # -> data/yamaha-clp685-data.toml
+python3 generate_cakewalk_yamaha_ins.py > "Yamaha CLP-685.ins"
+```
+
+`data/yamaha-clp685-data.toml` 은 저장소에 포함되어 있으므로, 생성기만 다시 돌릴 때는 `make_toml.py` 를 건너뛰어도 됩니다. 데이터 리스트(`.txt`)를 고쳤을 때만 다시 변환하면 됩니다.
+
 ## How to
 
 ### CLP 685 지원 MIDI 형식
@@ -41,7 +73,7 @@ If you want to make an ins file, I'll give you my tools for reference(some pytho
 
 악기 선택은 다음 형태로 전송된다
 
-`CC0 BankSelct-MSB CCE2 BankSelct-LSB PATCH`
+`CC#0 BankSelect-MSB  CC#32 BankSelect-LSB  PC`
 
 예를 들어 clp685 의 CFX Grand 는 아래와 같이 정의된다.
 
@@ -55,7 +87,7 @@ If you want to make an ins file, I'll give you my tools for reference(some pytho
 
 bank number 는 `128*108+6=13830` 이고 patch 는 `1` 이다.
 
-![alt text](doc/images/Screenshot%202025-10-07%20174648.png)
+> 참고: 이 절에는 원래 CLP-685 화면 캡처가 있었으나 저장소에 포함되어 있지 않습니다.
 
 ### Cakewalk ins 파일 생성 로직
 
@@ -94,7 +126,7 @@ Patch[XXXXX]=YYYYY
 
 이름을 정할 때 제조사의 매뉴얼을 확인하면 좋다.
 
-![alt text](doc/images/Screenshot%202025-10-07%20180308.png)
+> 참고: 이 절에는 원래 CLP-685 데이터 리스트 화면 캡처가 있었으나 저장소에 포함되어 있지 않습니다.
 
 위와 같이 CFX Grand 의 Voice Group 은 Piano 로 정의했으나 실제로 MSB/LSB 가 다른 악기들이 포함되어있다.
 

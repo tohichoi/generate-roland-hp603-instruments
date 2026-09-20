@@ -1,68 +1,11 @@
 import collections
+import sys
 
 import toml
 
-
-def get_bank_name(banks, bankid):
-    # bank texts are subjectively named.
-    names = {
-        68: 'Piano A',
-        2115: 'Piano B',
-        576: 'Piano C',
-        1090: 'Piano & Orch',
-        69: 'Piano D',
-        67: 'Piano E',
-        70: 'EP & Organ',
-        1092: 'Belle',
-        3137: 'EP A',
-        2114: 'EP B',
-        1094: 'Organ A',
-        66: 'Organ B',
-        1093: 'Organ C',
-        71: 'Organ & Strings',
-        4164: 'Bars',
-        4165: 'Organ D',
-        2112: 'Organ & Piano',
-        195: 'Orchestra A',
-        64: 'Orchestra B',
-        0: 'Orchestra C',
-        193: 'Orchestra D',
-        194: 'Orchestra E',
-        6081: 'Piano F',
-        1088: 'Piano G',
-        65: 'Jazz Scat',
-        320: 'Piano H',
-        320: 'Forte Piano A',
-        321: 'Forte Piano B',
-        322: 'Forte Piano C',
-        1091: 'Harpsicord',
-        15360: 'Drums',
-        15488: 'GM A',
-        15489: 'GM B',
-        15490: 'GM C',
-        15491: 'GM D',
-        15492: 'GM E',
-        15492: 'Effect A',
-        15493: 'Effect B',
-        15494: 'Effect C',
-        15494: 'Effect D',
-        15495: 'Effect E',
-        15496: 'Effect F',
-        15497: 'Effect G'
-    }
-
-    if bankid in names:
-        return names[bankid]
-
-    return f'Bank#{bankid}'
-
-
-def get_banks(inst_name, data):
-    for k, val in data.items():
-        group = k
-        for v in val:
-            inst_info[group].append([v['msb'], v['lsb'], v['prog']])
-    return inst_info
+# Cakewalk is a Windows application and reads these files as CRLF.
+# Pin it here so regenerating on Linux does not produce a whole-file diff.
+sys.stdout.reconfigure(newline='\r\n')
 
 
 class Instrument:
@@ -78,7 +21,7 @@ class Instrument:
 
     @property
     def bank_name(self):
-        return f'Bank/{self.bank_id}'
+        return f'Bank#{self.bank_id}'
 
     def __repr__(self):
         return f'Instrument(name={self.name}, msb={self.msb}, lsb={self.lsb}, prog={self.prog})'
@@ -142,8 +85,8 @@ for category, groups in data.items():
             categories[category].add_instrument(group, i)
 
 print(';')
-print('; Cakewalk Instrument definition file for the Roland HP603')
-print('; Mike Choi, Oct 2019')
+print('; Cakewalk Instrument definition file for the Yamaha CLP-685')
+print('; Mike Choi')
 print(';\n')
 print('.Patch Names')
 

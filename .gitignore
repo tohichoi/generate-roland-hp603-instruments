@@ -1,0 +1,8 @@
+# make_toml.py 의 디버그 덤프. 배포에는 쓰이지 않는다.
+# data/yamaha-clp685-data.toml 은 생성기와 find_instruments.py 가 읽는 입력이므로 커밋한다.
+data/*.json
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/

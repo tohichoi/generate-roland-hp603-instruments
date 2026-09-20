@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MIDI Instrument Definition Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#020617;
+    --panel:rgba(15,23,42,.62);
+    --line:rgba(255,255,255,.08);
+    --blue:#38bdf8;
+    --cyan:#06b6d4;
+    --emerald:#10b981;
+    --text:#f8fafc;
+    --muted:#94a3b8;
+    --dim:#64748b;
+    --mono:"JetBrains Mono",Consolas,"DejaVu Sans Mono",monospace;
+    --sans:"Plus Jakarta Sans","DejaVu Sans",sans-serif;
+    --grot:"Space Grotesk",var(--sans);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1600px;height:900px;overflow:hidden}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;position:relative}
+
+  .glow{position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(circle at 8% 4%, rgba(56,189,248,.16) 0%, transparent 40%),
+      radial-gradient(circle at 94% 12%, rgba(16,185,129,.14) 0%, transparent 42%),
+      radial-gradient(circle at 50% 100%, rgba(6,182,212,.13) 0%, transparent 50%)}
+  .grid{position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:
+      linear-gradient(rgba(56,189,248,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56,189,248,.05) 1px, transparent 1px);
+    background-size:50px 50px}
+  .keys{position:absolute;left:0;right:0;bottom:0;height:10px;opacity:.5;
+    background:
+      repeating-linear-gradient(90deg, rgba(56,189,248,.22) 0 3px, transparent 3px 15px),
+      repeating-linear-gradient(90deg, rgba(56,189,248,.07) 0 15px, transparent 15px 60px);
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+
+  .wrap{position:absolute;inset:0;padding:46px 60px 0;display:flex;flex-direction:column}
+
+  /* ---------- header ---------- */
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;
+    font-family:var(--grot);font-size:12px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--blue);
+    background:rgba(56,189,248,.09);border:1px solid rgba(56,189,248,.28);
+    padding:6px 15px;border-radius:9999px;align-self:flex-start}
+  .eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--blue);
+    box-shadow:0 0 9px var(--blue);display:block}
+  h1{margin-top:20px;font-size:46px;font-weight:800;letter-spacing:-.022em;
+    line-height:1.06;white-space:nowrap}
+  h1 .accent{background:linear-gradient(96deg,var(--blue),var(--cyan));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{margin-top:11px;font-size:20px;font-weight:400;color:var(--muted)}
+  .sub .vs{color:var(--dim);padding:0 4px}
+  .sub code{font-family:var(--mono);color:var(--cyan);font-size:18px}
+
+  /* ---------- main split ---------- */
+  .flow{margin-top:22px;height:588px;display:flex;gap:16px;align-items:stretch}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    position:relative;display:flex;flex-direction:column;overflow:hidden}
+  .panel::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;
+    background:linear-gradient(90deg,transparent,var(--swoosh),transparent)}
+  .panel.vend{flex:1;padding:24px 26px}
+  .roland{--swoosh:rgba(56,189,248,.55);--va:var(--blue)}
+  .yamaha{--swoosh:rgba(16,185,129,.55);--va:var(--emerald)}
+  .core{flex:0 0 352px;padding:24px 26px;--swoosh:rgba(6,182,212,.6);
+    align-items:center;text-align:center}
+
+  .plabel{font-family:var(--grot);font-size:11px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--dim)}
+  .plabel b{color:var(--va,var(--cyan));font-weight:600}
+
+  /* vendor head */
+  .vhead{display:flex;align-items:baseline;justify-content:space-between;
+    padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .vname{font-family:var(--grot);font-size:25px;font-weight:700;letter-spacing:-.01em;
+    color:var(--va)}
+  .vtag{font-family:var(--mono);font-size:12px;color:var(--dim);text-align:right;
+    line-height:1.5}
+  .vhead + .plabel{margin-top:16px}
+
+  /* segment rows */
+  .segs{margin-top:11px;flex:1;display:flex;flex-direction:column;
+    justify-content:space-evenly}
+  .seg{display:grid;grid-template-columns:96px 1fr auto;align-items:center;
+    gap:12px;padding:9px 10px;margin:0 -10px;border-radius:9px;
+    border-bottom:1px dashed rgba(255,255,255,.06)}
+  .seg:last-child{border-bottom:0}
+  .seg .chip{font-family:var(--mono);font-size:12.5px;font-weight:700;
+    letter-spacing:-.01em;padding:4px 7px;border-radius:6px;text-align:center;
+    white-space:nowrap}
+  .seg .desc{font-size:14.5px;line-height:1.4;color:var(--muted)}
+  .seg .desc .nm{color:var(--text);font-weight:600;font-size:15px}
+  .seg .desc .lsb{display:block;font-family:var(--mono);font-size:12px;
+    color:var(--dim);margin-top:3px}
+  .seg .cnt{font-family:var(--grot);font-size:26px;font-weight:700;
+    letter-spacing:-.02em;text-align:right;min-width:62px}
+  .seg .cnt small{display:block;font-size:10px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--dim);margin-top:1px}
+
+  .seg.nat  .chip{background:rgba(56,189,248,.13);color:var(--blue);border:1px solid rgba(56,189,248,.3)}
+  .seg.nat  .cnt{color:var(--blue)}
+  .seg.std  .chip{background:rgba(6,182,212,.13);color:var(--cyan);border:1px solid rgba(6,182,212,.3)}
+  .seg.std  .cnt{color:var(--cyan)}
+  .seg.drm  .chip{background:rgba(16,185,129,.13);color:var(--emerald);border:1px solid rgba(16,185,129,.3)}
+  .seg.drm  .cnt{color:var(--emerald)}
+  /* de-emphasised exception row — same grammar, lower presence */
+  .seg.sm{padding:6px 10px}
+  .seg.sm .chip{font-size:11.5px;padding:3px 7px;opacity:.9}
+  .seg.sm .desc .nm{font-size:13.5px;font-weight:500;color:var(--muted)}
+  .seg.sm .desc .lsb{font-size:11px}
+  .seg.sm .cnt{font-size:20px;opacity:.85}
+  .seg.sm .cnt small{font-size:9px}
+
+  /* MSB address axis */
+  .axis{padding-top:15px;border-top:1px solid var(--line)}
+  .axis .track{position:relative;height:22px;margin-top:9px}
+  .axis .rail{position:absolute;left:0;right:0;top:9px;height:3px;border-radius:2px;
+    background:rgba(255,255,255,.09)}
+  .axis .tick{position:absolute;top:3px;width:3px;height:15px;border-radius:1.5px;
+    transform:translateX(-50%)}
+  .axis .tick.nat{background:var(--blue);box-shadow:0 0 7px rgba(56,189,248,.85)}
+  .axis .tick.std{background:var(--cyan);box-shadow:0 0 7px rgba(6,182,212,.85)}
+  .axis .tick.drm{background:var(--emerald);box-shadow:0 0 7px rgba(16,185,129,.85)}
+  .axis .scale{display:flex;justify-content:space-between;font-family:var(--mono);
+    font-size:11px;color:var(--dim);margin-top:5px}
+
+  .vfoot{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);
+    display:flex;align-items:baseline;gap:10px;font-family:var(--mono);font-size:14px}
+  .vfoot .big{font-family:var(--grot);font-size:30px;font-weight:700;
+    letter-spacing:-.02em;color:var(--va)}
+  .vfoot .lbl{color:var(--dim);font-size:12.5px;line-height:1.45}
+  .vfoot .lbl b{color:var(--va)}
+
+  /* ---------- centre core ---------- */
+  .core .plabel{margin-bottom:18px}
+  .bytes{display:flex;gap:9px;justify-content:center;align-items:center}
+  .byte{background:rgba(2,6,23,.72);border:1px solid var(--line);border-radius:10px;
+    padding:12px 10px;min-width:82px}
+  .byte .b1{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--blue)}
+  .byte .b2{font-family:var(--grot);font-size:10px;font-weight:600;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--dim);margin-top:6px}
+  .byte.acc{border-color:rgba(6,182,212,.35);background:rgba(6,182,212,.08)}
+  .byte.acc .b1{color:var(--cyan)}
+  .byte.pc{border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.07)}
+  .byte.pc .b1{color:var(--emerald)}
+  .seqarrow{font-family:var(--mono);font-size:15px;color:var(--dim)}
+
+  .rule{margin-top:22px;width:100%;background:rgba(6,182,212,.07);
+    border:1px solid rgba(6,182,212,.3);border-radius:13px;padding:19px 16px 17px}
+  .rule .eq{font-family:var(--mono);font-size:16.5px;line-height:1.62;color:var(--text)}
+  .rule .eq .fn{color:var(--cyan);font-weight:700}
+  .rule .eq .op{color:var(--dim)}
+  .rule .eq .n{color:var(--blue);font-weight:700}
+  .rule .cap{margin-top:11px;padding-top:11px;border-top:1px solid rgba(6,182,212,.2);
+    font-family:var(--mono);font-size:12px;color:var(--dim);line-height:1.65}
+
+  .space{margin-top:20px;width:100%}
+  .space .bar{height:34px;border-radius:8px;border:1px solid var(--line);
+    background:repeating-linear-gradient(90deg,rgba(255,255,255,.055) 0 1px,transparent 1px 13px);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .space .bar b{color:var(--cyan);font-weight:700}
+  .space .cap{margin-top:9px;font-family:var(--mono);font-size:11.5px;
+    color:var(--dim);line-height:1.6}
+
+  .split{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
+    width:100%;padding-top:16px}
+  .split .warn{width:100%;background:rgba(16,185,129,.07);
+    border:1px dashed rgba(16,185,129,.34);border-radius:11px;padding:13px 14px;
+    text-align:left;font-size:13px;line-height:1.55;color:var(--muted)}
+  .split .warn b{color:var(--emerald);font-weight:600}
+
+  /* ---------- footer ---------- */
+  .foot{margin-top:auto;height:96px;display:flex;align-items:center;
+    justify-content:space-between;border-top:1px solid var(--line)}
+  .stats{display:flex;align-items:center}
+  .stat{padding-right:30px;margin-right:30px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:0;margin-right:0;padding-right:0}
+  .stat .n{font-family:var(--grot);font-size:32px;font-weight:700;line-height:1;
+    letter-spacing:-.02em}
+  .stat .n.b{color:var(--blue)} .stat .n.c{color:var(--cyan)} .stat .n.e{color:var(--emerald)}
+  .stat .l{margin-top:8px;font-family:var(--grot);font-size:11px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+  .meta{text-align:right;font-family:var(--mono);font-size:13.5px;color:var(--dim);line-height:1.95}
+  .meta b{color:var(--muted);font-weight:500}
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="grid"></div>
+
+  <div class="wrap">
+    <span class="eyebrow"><i></i>Case Study · MIDI Protocol Reverse Engineering</span>
+    <h1>MIDI <span class="accent">Instrument Definition</span> Generator</h1>
+    <div class="sub">Roland HP603 <span class="vs">/</span> Yamaha CLP-685 <span class="vs">·</span> one bank-select protocol, two incompatible vendor maps <span class="vs">·</span> Cakewalk <code>.ins</code></div>
+
+    <div class="flow">
+
+      <!-- ============ ROLAND ============ -->
+      <div class="panel vend roland">
+        <div class="vhead">
+          <div class="vname">Roland HP603</div>
+          <div class="vtag">Native banked low,<br>GM2 / GS extensions at 120–121</div>
+        </div>
+        <div class="plabel">Bank select · <b>MSB → LSB</b></div>
+
+        <div class="segs">
+          <div class="seg nat">
+            <div class="chip">0·1·2·4·8<br>16·24·32·47</div>
+            <div class="desc"><span class="nm">Native piano voices</span>
+              <span class="lsb">LSB 64 – 71</span></div>
+            <div class="cnt">50<small>voices</small></div>
+          </div>
+          <div class="seg std sm">
+            <div class="chip">0</div>
+            <div class="desc"><span class="nm">GM bank 0</span>
+              <span class="lsb">LSB 0 · prog 40/42/45</span></div>
+            <div class="cnt">3<small>voices</small></div>
+          </div>
+          <div class="seg std">
+            <div class="chip">121</div>
+            <div class="desc"><span class="nm">GM2 standard set</span>
+              <span class="lsb">LSB 0 – 9</span></div>
+            <div class="cnt">256<small>voices</small></div>
+          </div>
+          <div class="seg drm">
+            <div class="chip">120</div>
+            <div class="desc"><span class="nm">Drum kits</span>
+              <span class="lsb">LSB 0</span></div>
+            <div class="cnt">9<small>kits</small></div>
+          </div>
+        </div>
+
+        <div class="axis">
+          <div class="plabel">MSB address space · <b>0 – 127</b></div>
+          <div class="track">
+            <div class="rail"></div>
+            <div class="tick nat" style="left:0.4%"></div>
+            <div class="tick nat" style="left:1.2%"></div>
+            <div class="tick nat" style="left:2.0%"></div>
+            <div class="tick nat" style="left:3.5%"></div>
+            <div class="tick nat" style="left:6.7%"></div>
+            <div class="tick nat" style="left:13.0%"></div>
+            <div class="tick nat" style="left:19.3%"></div>
+            <div class="tick nat" style="left:25.6%"></div>
+            <div class="tick nat" style="left:37.4%"></div>
+            <div class="tick drm" style="left:94.5%"></div>
+            <div class="tick std" style="left:95.3%"></div>
+          </div>
+          <div class="scale"><span>0</span><span>64</span><span>127</span></div>
+        </div>
+
+        <div class="vfoot">
+          <div class="big">318</div>
+          <div class="lbl">voices<br>across <b>40</b> banks</div>
+        </div>
+      </div>
+
+      <!-- ============ CORE RULE ============ -->
+      <div class="panel core">
+        <div class="plabel">The shared rule · <b>3 bytes</b></div>
+
+        <div class="bytes">
+          <div class="byte">
+            <div class="b1">CC#0</div>
+            <div class="b2">Bank MSB</div>
+          </div>
+          <div class="seqarrow">→</div>
+          <div class="byte acc">
+            <div class="b1">CC#32</div>
+            <div class="b2">Bank LSB</div>
+          </div>
+          <div class="seqarrow">→</div>
+          <div class="byte pc">
+            <div class="b1">PC</div>
+            <div class="b2">Program</div>
+          </div>
+        </div>
+
+        <div class="rule">
+          <div class="eq">
+            <span class="fn">BankNumber</span> <span class="op">=</span><br>
+            <span class="n">CC#0</span> <span class="op">×</span> 128 <span class="op">+</span> <span class="n">CC#32</span>
+          </div>
+          <div class="cap">MSB × 128 + LSB &nbsp;→&nbsp; one 14-bit address</div>
+        </div>
+
+        <div class="space">
+          <div class="bar"><b>16,384</b>&nbsp;banks &nbsp;×&nbsp; 128 programs</div>
+          <div class="cap">Both vendors transmit the identical 3 bytes into the identical address space. They simply carve it up differently.</div>
+        </div>
+
+        <div class="split">
+          <div class="warn">
+            <b>Not interchangeable.</b> A Roland bank number resolved on a Yamaha map lands on an unrelated voice — and the reverse. Each map had to be reverse-engineered from its own implementation.
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ YAMAHA ============ -->
+      <div class="panel vend yamaha">
+        <div class="vhead">
+          <div class="vname">Yamaha CLP-685</div>
+          <div class="vtag">Preset pinned to 108,<br>XG and SFX on their own MSBs</div>
+        </div>
+        <div class="plabel">Bank select · <b>MSB → LSB</b></div>
+
+        <div class="segs">
+          <div class="seg nat">
+            <div class="chip">108</div>
+            <div class="desc"><span class="nm">Preset voices</span>
+              <span class="lsb">LSB 0 – 7, 100</span></div>
+            <div class="cnt">31<small>voices</small></div>
+          </div>
+          <div class="seg std">
+            <div class="chip">0</div>
+            <div class="desc"><span class="nm">XG standard set</span>
+              <span class="lsb">43 LSB banks</span></div>
+            <div class="cnt">438<small>voices</small></div>
+          </div>
+          <div class="seg drm">
+            <div class="chip">64</div>
+            <div class="desc"><span class="nm">XG SFX kits</span>
+              <span class="lsb">LSB 0</span></div>
+            <div class="cnt">42<small>voices</small></div>
+          </div>
+        </div>
+
+        <div class="axis">
+          <div class="plabel">MSB address space · <b>0 – 127</b></div>
+          <div class="track">
+            <div class="rail"></div>
+            <div class="tick std" style="left:0.4%"></div>
+            <div class="tick drm" style="left:50.0%"></div>
+            <div class="tick nat" style="left:84.6%"></div>
+          </div>
+          <div class="scale"><span>0</span><span>64</span><span>127</span></div>
+        </div>
+
+        <div class="vfoot">
+          <div class="big">511</div>
+          <div class="lbl">voices<br>across <b>53</b> banks</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="foot">
+      <div class="stats">
+        <div class="stat"><div class="n b">2</div><div class="l">Vendors</div></div>
+        <div class="stat"><div class="n c">829</div><div class="l">Voices mapped</div></div>
+        <div class="stat"><div class="n e">450</div><div class="l">Lines · HP603 .ins</div></div>
+      </div>
+      <div class="meta">
+        <div><b>Python</b> &nbsp;·&nbsp; generate_cakewalk_ins.py &nbsp;·&nbsp; generate_cakewalk_yamaha_ins.py</div>
+        <div><b>2019 · 2025</b> &nbsp;·&nbsp; solo build &nbsp;·&nbsp; protocol reverse-engineered per vendor</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="keys"></div>
+</body>
+</html>
