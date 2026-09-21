@@ -4,8 +4,9 @@
 # 편입 프레임: Adopted Project
 #   디렉터(Mike)가 2019-10 에 시작해 2025-10~12 에 확장한 개인 도구를
 #   ATD 허브에 편입하여 분석 / 감사 / 문서화를 수행한 사례.
-#   ATD 는 프로토콜 분석과 구현에 참여하지 않았으며, participating_agents 에는
-#   편입 이후 실제로 수행한 기여만 기재한다.
+#   ATD 는 최초 구현에 참여하지 않았으나, 편입 과정에서 적발한 결함을
+#   소스에서 수정했으므로 development_origin 은 "mike+atd" 이다.
+#   participating_agents 에는 편입 이후 실제로 수행한 기여만 기재한다.
 #
 # 논지: 코드가 아니라 도메인 지식이 결과물의 상한을 결정한다.
 #   MIDI bank select 프로토콜을 역분석해 Roland / Yamaha 별 악기 선택
@@ -19,7 +20,7 @@ category = "AI & Automation"
 status = "Completed"
 case_study_badge = "ATD Adopted Project"
 development_time = "2단계 (2019.10 / 2025.12)"
-development_origin = "mike"
+development_origin = "mike+atd"
 cost_reduction = "산정 제외 (개인 프로젝트)"
 lead_director = "Mike (Managing Director)"
 thumbnail = "assets/thumbnail.jpg"
