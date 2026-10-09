@@ -59,6 +59,42 @@ name = "Noah"
 role = "Test Optimizer"
 contribution = "격리 환경에서 전사→TOML→.ins 파이프라인을 실제 실행해 검증하고, 생성 산출물의 bank·패치를 원본 데이터 829건과 전수 대조, 실행 불가 스크립트 적발"
 
+[[agent_flows]]
+source = "Mike"
+target = "Atlas"
+label = "829건 롤랜드 악기 데이터 전사 지휘"
+type = "direction"
+
+[[agent_flows]]
+source = "Atlas"
+target = "Leo"
+label = "Bank 분할 및 Cakewalk INS 규격 파싱 명세"
+type = "architecture"
+
+[[agent_flows]]
+source = "Leo"
+target = "Kai"
+label = "중복 키 해소 및 CRLF 변환 파이프라인 구현"
+type = "backend"
+
+[[agent_flows]]
+source = "Leo"
+target = "Sora"
+label = "3바이트 구조 대조 도판 16:9 썸네일 제작"
+type = "creative"
+
+[[agent_flows]]
+source = "Kai"
+target = "Elena"
+label = "서드파티 재배포 및 데이터 정적 감사"
+type = "audit"
+
+[[agent_flows]]
+source = "Kai"
+target = "Noah"
+label = "격리 환경 INS 산출물 및 패치 전수 검증"
+type = "qa"
+
 [[metrics]]
 label = "지원 기종"
 value = "2종"
